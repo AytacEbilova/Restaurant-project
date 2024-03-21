@@ -236,6 +236,7 @@ header .header .social a:hover {
 
 .pato-place-sect {
   background-image: url("https://preview.colorlib.com/theme/pato/images/bg-intro-01.jpg.webp");
+  background-attachment: fixed;
   height: 50vh;
   background-position: center;
   background-size: cover;
