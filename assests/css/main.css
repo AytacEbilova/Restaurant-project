@@ -428,3 +428,108 @@ header .header .social a:hover {
 .reservation-sect .container button:hover {
   background-color: #d61c22;
 }
+
+.customer-review .container .txt-center {
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+}
+.customer-review .container .txt-center .tittle-span {
+  font-family: "Courgette";
+  font-size: 30px;
+  line-height: 1.2;
+  color: #d61c22;
+}
+.customer-review .container .txt-center .tittle-h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  word-spacing: 6px;
+  color: #222222;
+}
+.customer-review .container .txt-center img {
+  border-radius: 50%;
+  width: 118px;
+  height: 118px;
+  border: 4px solid #ec1d25;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.customer-review .container .txt-center p {
+  color: #666666;
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-size: 18px;
+  margin: 0 140px;
+  margin-top: 30px;
+}
+.customer-review .container .txt-center ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.customer-review .container .txt-center .fa-solid {
+  color: #ec1d25;
+}
+.customer-review .container .txt-center .cls-p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.customer-review .container .txt-center .bottom-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  transition: 0.3 s linear;
+}
+.customer-review .container .txt-center .bottom-dots #dots {
+  display: flex;
+  gap: 5px;
+}
+.customer-review .container .txt-center .bottom-dots #dots li {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.customer-review .container .txt-center .bottom-dots #dots i {
+  color: transparent;
+  background-color: #958e88;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 1px solid transparent;
+}
+.customer-review .container .txt-center .bottom-dots #dots i:hover {
+  color: #ec1d25;
+  background-color: #ec1d25;
+}
+.customer-review .container .left button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  top: 40%;
+  left: 50px;
+  right: auto;
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  color: white;
+  background-color: #666666;
+  border: none;
+}
+.customer-review .container .left button:hover {
+  background-color: #d61c22;
+}
+.customer-review .container .left .fa-chevron-left {
+  color: white;
+}
