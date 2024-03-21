@@ -364,10 +364,67 @@ header .header .social a:hover {
 .our-menu .container .parent div:hover img {
   transform: scale(1.1);
 }
-.our-menu .container .parent a .pic-top-button {
-  background-color: white;
+
+.reservation-sect {
+  background-image: url("/assests/images/pattern1.png.webp");
+  background-repeat: repeat;
+  padding: 100px 0;
+}
+.reservation-sect .container .txt-center {
+  text-align: center;
+}
+.reservation-sect .container .txt-center .tittle-span {
+  font-family: "Courgette";
+  font-size: 30px;
+  line-height: 1.2;
+  color: #d61c22;
+  margin-left: 200px;
+}
+.reservation-sect .container .txt-center .tittle-h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  word-spacing: 6px;
+}
+.reservation-sect .container .txt-center p {
+  color: #555555;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+}
+.reservation-sect .container .txt-center .reserv-form {
+  width: 100%;
+  height: 50px;
   border-radius: 10px;
-  opacity: 0.9;
-  width: 190px;
-  height: 60px;
+  margin-bottom: 23px;
+  margin-top: 3px;
+}
+.reservation-sect .container img {
+  border-radius: 10px;
+  max-width: 390px;
+  margin: auto;
+  display: block;
+  transition: 0.5s linear;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+}
+.reservation-sect .container .img {
+  overflow: hidden;
+}
+.reservation-sect .container .img:hover img {
+  transform: scale(1.1);
+}
+.reservation-sect .container button {
+  margin-top: 30px;
+  width: 20%;
+  border: none;
+}
+.reservation-sect .container button:hover {
+  background-color: #d61c22;
 }
