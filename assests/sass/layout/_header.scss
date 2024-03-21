@@ -1,4 +1,10 @@
+
 header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
     .header{
         @include flex(space-between);
         padding: 20px 0px;
@@ -6,6 +12,7 @@ header{
            width: auto;
            max-width: 100%;
            vertical-align: middle; 
+        
         }
         nav{
             .menu-list{
@@ -14,12 +21,20 @@ header{
             a{
                 text-decoration: none;
                 font-family: $font-family;
+                color: $color-white
+          
+            }
+            a:hover{
+                color:$color-red;
             }
             }
         }
         .social{
            @include flex(space-between);
            gap:20px;
+           a{
+            color: $color-white;
+           }
            a:hover{
             color:$color-red;
            }

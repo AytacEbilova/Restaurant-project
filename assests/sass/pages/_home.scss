@@ -1,0 +1,165 @@
+#hero-banner{
+    height: 100vh;
+    background-image: url('https://preview.colorlib.com/theme/pato/images/slide1-01.jpg.webp');
+    background-position: center;
+    background-size: cover;
+    @include flex();
+    .hero-text{
+        text-align: center;
+       
+        h1{
+            font-family: $courgette;
+            font-size: $font-h1;
+            color: $color-white;
+            margin: 0 0 15px;
+          
+        }
+        p{
+            font-family: $poppins;
+            font-size: $font-p;
+            color: $color-white;
+            font-weight: bold;
+            margin: 0 0 37px;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            word-spacing: 10px;
+        }
+        a{
+            button{
+                @extend %primary-btn;
+                
+                span{
+                        color: $color-red;
+                        font-family: $font-family; 
+                }
+                span:hover{
+                    color: $color-white;
+                }
+            }
+            button:hover{
+                background-color:$color-red ;
+                
+            }
+        }
+    }
+    .bottom-dots{
+        @include flex();
+        padding-top:100px ;
+        transition: 0.3 s linear;
+        #dots{
+            display: flex;
+            gap: 5px;
+            li{
+                padding-left: 3px;
+                padding-right: 3px;
+            }
+            i{
+                color: transparent;
+                background-color: #958e88;
+                border-radius: 50%;
+                width: 16px;
+                height: 16px;
+                border: 1px solid transparent;
+                
+               
+            }
+            i:hover{
+                color:$color-red;
+                background-color: $color-white;
+                
+            }
+        }
+    }
+
+}
+.welcome-sect{
+    background-image : url("/assests/images/pattern1.png.webp");
+    background-repeat: repeat;
+    padding:100px 0;
+    .container{
+        .row{
+            .text-sect{
+                display: flex;
+                gap: 30px;
+                .left {
+                    text-align: center;
+                    padding-top: 50px;
+                    #italian-rest{
+                        color: $bg-red;
+                        font-size: 30px;
+                        line-height: 1.2;
+                        font-family: $courgette;
+                    } 
+                    h2{
+                        font-size: 50px;
+                        color: $bg-dark;
+                        font-family: $poppins;
+                        margin: 5px 0 35px;
+                    }  
+                    #tittle-p{
+                        font-size: 15px;
+                        font-family: $font-family;
+                        color:#666666;
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        margin: 0px 22px 28px;
+                        line-height: 1.7;
+                    }
+                    a{
+                        text-decoration: none;
+                        color:#666666;
+                        font-family: $font-family;
+                    }
+                    a:hover{
+                        color: $bg-red;
+                    }
+                }
+                .right{
+                   
+                    img{
+                        width: 100%;
+                        overflow: hidden;
+                        margin: 0 auto;
+                        border-radius: 10px;
+                        transition: 300ms linear;
+                    }
+                    img:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.pato-place-sect{
+    background-image: url('https://preview.colorlib.com/theme/pato/images/bg-intro-01.jpg.webp');
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flex();
+    .container{
+        .parallax{
+            text-align: center;
+
+            span{
+                font-family: $courgette;
+                font-size: 30px;
+                line-height: 1.2;
+                color: #d61c22
+            }
+            h3{
+                font-family:$poppins;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 1.2;
+                color: $color-white;
+                text-transform: uppercase;
+                letter-spacing: 10px;
+                word-spacing: 6px;
+            }
+        }
+    }
+}

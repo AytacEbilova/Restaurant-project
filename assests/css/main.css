@@ -56,6 +56,7 @@ table {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 1200px) {
   .container {
@@ -63,6 +64,21 @@ table {
   }
 }
 
+#hero-banner .hero-text a button {
+  border-radius: 10px;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 header .header {
   display: flex;
   justify-content: space-between;
@@ -81,6 +97,10 @@ header .header nav .menu-list {
 header .header nav .menu-list a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
+  color: white;
+}
+header .header nav .menu-list a:hover {
+  color: #ec1d25;
 }
 header .header .social {
   display: flex;
@@ -88,6 +108,158 @@ header .header .social {
   align-items: center;
   gap: 20px;
 }
+header .header .social a {
+  color: white;
+}
 header .header .social a:hover {
-  color: red;
+  color: #ec1d25;
+}
+
+#hero-banner {
+  height: 100vh;
+  background-image: url("https://preview.colorlib.com/theme/pato/images/slide1-01.jpg.webp");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero-banner .hero-text {
+  text-align: center;
+}
+#hero-banner .hero-text h1 {
+  font-family: "Courgette";
+  font-size: 60px;
+  color: white;
+  margin: 0 0 15px;
+}
+#hero-banner .hero-text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 90px;
+  color: white;
+  font-weight: bold;
+  margin: 0 0 37px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  word-spacing: 10px;
+}
+#hero-banner .hero-text a button span {
+  color: #ec1d25;
+  font-family: "Montserrat", sans-serif;
+}
+#hero-banner .hero-text a button span:hover {
+  color: white;
+}
+#hero-banner .hero-text a button:hover {
+  background-color: #ec1d25;
+}
+#hero-banner .bottom-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  transition: 0.3 s linear;
+}
+#hero-banner .bottom-dots #dots {
+  display: flex;
+  gap: 5px;
+}
+#hero-banner .bottom-dots #dots li {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+#hero-banner .bottom-dots #dots i {
+  color: transparent;
+  background-color: #958e88;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 1px solid transparent;
+}
+#hero-banner .bottom-dots #dots i:hover {
+  color: #ec1d25;
+  background-color: white;
+}
+
+.welcome-sect {
+  background-image: url("/assests/images/pattern1.png.webp");
+  background-repeat: repeat;
+  padding: 100px 0;
+}
+.welcome-sect .container .row .text-sect {
+  display: flex;
+  gap: 30px;
+}
+.welcome-sect .container .row .text-sect .left {
+  text-align: center;
+  padding-top: 50px;
+}
+.welcome-sect .container .row .text-sect .left #italian-rest {
+  color: #d61c22;
+  font-size: 30px;
+  line-height: 1.2;
+  font-family: "Courgette";
+}
+.welcome-sect .container .row .text-sect .left h2 {
+  font-size: 50px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  margin: 5px 0 35px;
+}
+.welcome-sect .container .row .text-sect .left #tittle-p {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #666666;
+  font-family: Montserrat;
+  font-weight: 400;
+  margin: 0px 22px 28px;
+  line-height: 1.7;
+}
+.welcome-sect .container .row .text-sect .left a {
+  text-decoration: none;
+  color: #666666;
+  font-family: "Montserrat", sans-serif;
+}
+.welcome-sect .container .row .text-sect .left a:hover {
+  color: #d61c22;
+}
+.welcome-sect .container .row .text-sect .right img {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: 300ms linear;
+}
+.welcome-sect .container .row .text-sect .right img:hover {
+  transform: scale(1.1);
+}
+
+.pato-place-sect {
+  background-image: url("https://preview.colorlib.com/theme/pato/images/bg-intro-01.jpg.webp");
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pato-place-sect .container .parallax {
+  text-align: center;
+}
+.pato-place-sect .container .parallax span {
+  font-family: "Courgette";
+  font-size: 30px;
+  line-height: 1.2;
+  color: #d61c22;
+}
+.pato-place-sect .container .parallax h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  word-spacing: 6px;
 }
