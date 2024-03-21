@@ -1,0 +1,28 @@
+header{
+    .header{
+        @include flex(space-between);
+        padding: 20px 0px;
+        .logo{
+           width: auto;
+           max-width: 100%;
+           vertical-align: middle; 
+        }
+        nav{
+            .menu-list{
+                display: flex;
+                gap: 20px;
+            a{
+                text-decoration: none;
+                font-family: $font-family;
+            }
+            }
+        }
+        .social{
+           @include flex(space-between);
+           gap:20px;
+           a:hover{
+            color:$color-red;
+           }
+        }
+    }
+}
