@@ -906,3 +906,49 @@ footer .col-4 .parent div:hover::after {
   letter-spacing: 2px;
   text-decoration: none;
 }
+
+.lunch-menu .row .col-3 {
+  padding-top: 30px;
+}
+.lunch-menu .row .col-3 .img-cont {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.lunch-menu .row .col-3 .img-cont img {
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+.lunch-menu .row .col-3 .img-cont img:hover {
+  transform: scale(1.1);
+}
+.lunch-menu .row .col-3 .text-content {
+  padding-top: 70px;
+}
+.lunch-menu .row .col-3 h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 30px;
+}
+.lunch-menu .row .col-3 p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.7;
+}
+.lunch-menu .row .col-3 .price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #333333;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
