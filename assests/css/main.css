@@ -636,17 +636,70 @@ header .header .social a:hover {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+.blog-sect .row .col-4 h3:hover {
+  color: #ec1d25;
+  cursor: pointer;
+}
 .blog-sect .row .col-4 p {
   margin: 0 0 20px;
   font-family: "Montserrat", sans-serif;
   color: rgb(149, 146, 146);
 }
 .blog-sect .row .col-4 a {
-  color: #3D3D3D;
   text-decoration: none;
   margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .blog-sect .row .col-4 a .fa-solid {
   font-size: 12px;
   color: #222222;
+}
+.blog-sect .row .col-4 a:hover, .blog-sect .row .col-4 .fa-solid:hover {
+  color: #ec1d25;
+}
+
+.sign-up {
+  background-image: url("/assests/images/pattern1.png.webp");
+  background-repeat: repeat;
+  padding: 100px 0;
+}
+.sign-up .row {
+  padding: 0 5px;
+}
+.sign-up .row .col-4 p {
+  margin: 10px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 22px;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.sign-up .row .col-4 input[type=email] {
+  position: relative;
+  padding-right: 30px;
+}
+.sign-up .row .col-4 i.fa-solid.fa-envelope {
+  position: absolute;
+  right: 400px;
+  transform: translateY(-50%);
+  color: black;
+}
+.sign-up .row button {
+  background: #111111;
+  border-radius: 10px;
+  width: 160px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }

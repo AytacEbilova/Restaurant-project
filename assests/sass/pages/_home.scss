@@ -558,6 +558,7 @@
             word-spacing: 6px;
             color: #222222;
         }
+
        
         }
         .row{
@@ -586,15 +587,24 @@
                         margin-bottom: 20px;
                         margin-top: 20px;
                     }
+                    h3:hover{
+                        color: $color-red;
+                        cursor: pointer;
+                    }
                     p{
                         margin: 0 0 20px;
                         font-family: $font-family;
                         color: rgb(149, 146, 146);
                     }
                     a{
-                        color:$bg-gray ;
                         text-decoration: none;
                         margin-left: 20px;
+                        font-family:$font-family;
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: #222222;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
                     
                     .fa-solid{
                         font-size: 12px;
@@ -602,10 +612,61 @@
                         
                     }
                 }
+                a:hover, .fa-solid:hover {
+                    color: $color-red;
+                  } 
+                    
                 }
             }
 }
 //--------------------END BLOG-SECTION----------------------------------------------
+
+//------------------START SIGN-UP SECTION--------------------------------------------
+.sign-up{
+    background-image: url('/assests/images/pattern1.png.webp');
+    background-repeat: repeat;
+    padding: 100px 0;
+    .row{
+        .col-4{
+            p{
+                margin:10px;
+                font-family: Poppins;
+                font-weight: 500;
+                font-size: 22px;
+                color: #333333;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+            input[type="email"] {
+                position: relative;
+                padding-right: 30px; // Provide space for the icon
+              }
+        
+              i.fa-solid.fa-envelope {
+                position: absolute;
+                right: 400px;
+                
+                transform: translateY(-50%);
+                color: black;
+              }
+            }
+            button{
+                background: #111111;
+                border-radius: 10px;
+                width: 160px;
+                height: 40px;
+                font-family: $font-family;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 1.1;
+                color: $color-white;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            padding: 0 5px;
+        }
+    }
+//-------------------END SIGN-UP SECTION---------------------------------------------
 
 
 
