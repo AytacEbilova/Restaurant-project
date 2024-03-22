@@ -176,11 +176,13 @@
     .container{
         .col-4{
             padding-top: 30px;
-            img{
-                width: 100%;
+            .img-container{
                 border-radius: 10px;
-               transition: 300ms linear;
-               
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    transition: 300ms linear;
+                }
             }
             img:hover{
                 transform: scale(1.1);
@@ -222,7 +224,6 @@
     .container{
         .text-content{
             text-align: center;
-            
             .tittle-span{
                 font-family: $courgette;
                 font-size: 30px;
@@ -364,7 +365,7 @@
 //-----------------END-RESERVATION SECTION------------------------------------
 
 
-//------------------Start customer-review-------------------------------------
+//------------------START CUSTOMER-REVIEW-------------------------------------
 .customer-review{
     .container{
         .txt-center{
@@ -474,7 +475,7 @@
 
     }
 }
-//------------------End customer-review--------------------------------------
+//--------------------END CUSTOMER-REVIEW--------------------------------------
 
 //--------------------START VIDEO SECTION--------------------------------------
  .video-sect{
@@ -535,6 +536,7 @@
  }
  //------------------END VIDEO SECTION---------------------------------------------
 
+// -------------------START BLOG-SECTION--------------------------------------------
  .blog-sect{
     .text-center{
         text-align: center;
@@ -559,10 +561,52 @@
        
         }
         .row{
-            .col-4{
-                img{
-                   width: 100%;
+                   .col-4{
+                    padding-top: 30px;
+                    img{
+                        width: 100%;
+                        border-radius: 10px;
+                        transition: 300ms linear;
+                        object-fit: cover;
+                    }
+                    .div{
+                        overflow: hidden;
+                    }
+                    img:hover{
+                        transform: scale(1.1);
+                        
+                    }
+                    h3{
+                        font-family: Poppins;
+                        font-weight: 500;
+                        font-size: 22px;
+                        color: #333333;
+                        text-transform: uppercase;
+                        letter-spacing: 3px;
+                        margin-bottom: 20px;
+                        margin-top: 20px;
+                    }
+                    p{
+                        margin: 0 0 20px;
+                        font-family: $font-family;
+                        color: rgb(149, 146, 146);
+                    }
+                    a{
+                        color:$bg-gray ;
+                        text-decoration: none;
+                        margin-left: 20px;
+                    
+                    .fa-solid{
+                        font-size: 12px;
+                        color: #222222;
+                        
+                    }
+                }
+                }
             }
-                   }
 }
-}
+//--------------------END BLOG-SECTION----------------------------------------------
+
+
+
+
