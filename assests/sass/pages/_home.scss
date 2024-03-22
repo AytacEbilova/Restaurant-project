@@ -362,6 +362,9 @@
      }
 }
 //-----------------END-RESERVATION SECTION------------------------------------
+
+
+//------------------Start customer-review-------------------------------------
 .customer-review{
     .container{
         .txt-center{
@@ -470,4 +473,96 @@
        
 
     }
+}
+//------------------End customer-review--------------------------------------
+
+//--------------------START VIDEO SECTION--------------------------------------
+ .video-sect{
+    background-image: url('/assests/images/bg-cover-video-02.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    .container{
+        .txt-content{
+            text-align: center;
+            padding: 100px 0;
+            .tittle-span{
+                font-family: $courgette;
+                font-size: 40px;
+                line-height: 1.2;
+                color: #d61c22;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-top: 70px;
+               
+            }
+            .tittle-h3{
+                font-family:$poppins;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 1.2;
+                color: $color-white;
+                text-transform: uppercase;
+                letter-spacing: 10px;
+                word-spacing: 6px;
+                color: $color-white;
+                margin-top: 20px;
+                
+            }
+            button{
+                width: 70px;
+                height: 70px;
+                margin-top: 45px;
+                margin-bottom: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 50%;
+                border: none;
+                transition: .3s linear;
+                
+            }
+            i{
+                color: $bg-dark;
+                font-size: 16px;
+            }
+            button:hover{
+                background-color:#d61c2288;
+                transform: scale(1.2);
+            }
+        }
+    }
+ }
+ //------------------END VIDEO SECTION---------------------------------------------
+
+ .blog-sect{
+    .text-center{
+        text-align: center;
+        padding: 100px 0;
+        .tittle-span{
+            font-family: $courgette;
+            font-size: 30px;
+            line-height: 1.2;
+            color: #d61c22
+        }
+        .tittle-h3{
+            font-family:$poppins;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 1.2;
+            color: $color-white;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            word-spacing: 6px;
+            color: #222222;
+        }
+       
+        }
+        .row{
+            .col-4{
+                img{
+                   width: 100%;
+            }
+                   }
+}
 }

@@ -533,3 +533,80 @@ header .header .social a:hover {
 .customer-review .container .left .fa-chevron-left {
   color: white;
 }
+
+.video-sect {
+  background-image: url("/assests/images/bg-cover-video-02.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.video-sect .container .txt-content {
+  text-align: center;
+  padding: 100px 0;
+}
+.video-sect .container .txt-content .tittle-span {
+  font-family: "Courgette";
+  font-size: 40px;
+  line-height: 1.2;
+  color: #d61c22;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 70px;
+}
+.video-sect .container .txt-content .tittle-h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  word-spacing: 6px;
+  color: white;
+  margin-top: 20px;
+}
+.video-sect .container .txt-content button {
+  width: 70px;
+  height: 70px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: none;
+  transition: 0.3s linear;
+}
+.video-sect .container .txt-content i {
+  color: black;
+  font-size: 16px;
+}
+.video-sect .container .txt-content button:hover {
+  background-color: rgba(214, 28, 34, 0.5333333333);
+  transform: scale(1.2);
+}
+
+.blog-sect .text-center {
+  text-align: center;
+  padding: 100px 0;
+}
+.blog-sect .text-center .tittle-span {
+  font-family: "Courgette";
+  font-size: 30px;
+  line-height: 1.2;
+  color: #d61c22;
+}
+.blog-sect .text-center .tittle-h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  word-spacing: 6px;
+  color: #222222;
+}
+.blog-sect .row .col-4 img {
+  width: 100%;
+}
