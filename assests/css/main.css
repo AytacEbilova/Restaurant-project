@@ -115,6 +115,98 @@ header .header .social a:hover {
   color: #ec1d25;
 }
 
+footer {
+  background-color: #222222;
+  padding: 100px 0;
+}
+footer .row .col-4 ul li {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 13px;
+  color: #999999;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+footer .row .col-4 a {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 13px;
+  color: #ec1d25;
+  line-height: 1.7;
+}
+footer .row .col-4 i {
+  color: white;
+}
+footer .row .col-4 h4 {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 33px;
+  padding-top: 20px;
+}
+footer .row .col-4 p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 13px;
+  color: #999999;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+footer .row .col-4 .parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+footer .row .col-4 .parent .div1 {
+  grid-area: 1/1/2/2;
+}
+footer .row .col-4 .parent .div2 {
+  grid-area: 1/2/2/3;
+}
+footer .row .col-4 .parent .div3 {
+  grid-area: 1/3/2/4;
+}
+footer .row .col-4 .parent .div4 {
+  grid-area: 1/4/2/5;
+}
+footer .row .col-4 .parent .div5 {
+  grid-area: 2/1/3/2;
+}
+footer .row .col-4 .parent .div6 {
+  grid-area: 2/2/3/3;
+}
+footer .row .col-4 .parent .div7 {
+  grid-area: 2/3/3/4;
+}
+footer .row .col-4 .parent .div8 {
+  grid-area: 2/4/3/5;
+}
+footer .row .col-4 .parent .div9 {
+  grid-area: 3/1/4/2;
+}
+footer .row .col-4 .parent .div10 {
+  grid-area: 3/2/4/3;
+}
+footer .row .col-4 .parent .div11 {
+  grid-area: 3/3/4/4;
+}
+footer .row .col-4 .parent .div12 {
+  grid-area: 3/4/4/5;
+}
+footer .row .col-4 img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+footer .row .col-4 img:hover {
+  background-color: red;
+}
+
 #hero-banner {
   height: 100vh;
   background-image: url("https://preview.colorlib.com/theme/pato/images/slide1-01.jpg.webp");
