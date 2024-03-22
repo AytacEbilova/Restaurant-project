@@ -1,7 +1,7 @@
 footer{
     background-color: #222222;
     padding: 100px 0;
-    .row{
+    
         .col-4{
             
             ul{
@@ -63,17 +63,37 @@ footer{
                 .div10 { grid-area: 3 / 2 / 4 / 3; }
                 .div11 { grid-area: 3 / 3 / 4 / 4; }
                 .div12 { grid-area: 3 / 4 / 4 / 5; }
-            }
-            img{
-                width: 100%;
-                height: 100%;
-                background-size: cover;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                    
+                 }
+                    div:hover img{
+                        filter: brightness(30%);
+                         background-color: #ec1d25;
+                     }
+                 
                 
-             }
-            img:hover{
-                background-color: red;
-             }
+            }
+            
         
         }
     }
-}
+
+
+.footer-2{
+    background-color: black; 
+    .content{
+            i{
+                color: $color-white;
+            }
+       .theme{
+        justify-items: flex-end;
+        color:#999999;
+       }
+    }            
+        }
+    
+
