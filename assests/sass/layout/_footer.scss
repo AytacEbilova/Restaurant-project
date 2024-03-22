@@ -1,6 +1,6 @@
 footer{
     background-color: #222222;
-    padding: 100px 0;
+    padding:  40px;
     
         .col-4{
             
@@ -63,16 +63,29 @@ footer{
                 .div10 { grid-area: 3 / 2 / 4 / 3; }
                 .div11 { grid-area: 3 / 3 / 4 / 4; }
                 .div12 { grid-area: 3 / 4 / 4 / 5; }
-
+                div{
+                    position: relative;
+                }
                 img{
                     width: 100%;
-                    height: 100%;
+                    height:auto;
                     background-size: cover;
+                    transition: 0.5s ease ;
                     
                  }
-                    div:hover img{
-                        filter: brightness(30%);
-                         background-color: #ec1d25;
+                   div::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transition: background-color 0.5s ease;
+                   }
+                   div:hover::after{
+                    background-color: rgba(255, 0, 0, 0.634);
+                   }
+                        
                      }
                  
                 
@@ -80,20 +93,19 @@ footer{
             
         
         }
-    }
-
-
 .footer-2{
-    background-color: black; 
+    background-color: black;
+   
     .content{
             i{
                 color: $color-white;
             }
        .theme{
-        justify-items: flex-end;
+        justify-content : flex-end;
         color:#999999;
+        display: flex;
        }
     }            
-        }
+    }
     
 

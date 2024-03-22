@@ -117,7 +117,7 @@ header .header .social a:hover {
 
 footer {
   background-color: #222222;
-  padding: 100px 0;
+  padding: 40px;
 }
 footer .col-4 ul li {
   font-family: Montserrat;
@@ -198,14 +198,26 @@ footer .col-4 .parent .div11 {
 footer .col-4 .parent .div12 {
   grid-area: 3/4/4/5;
 }
+footer .col-4 .parent div {
+  position: relative;
+}
 footer .col-4 .parent img {
   width: 100%;
-  height: 100%;
+  height: auto;
   background-size: cover;
+  transition: 0.5s ease;
 }
-footer .col-4 .parent div:hover img {
-  filter: brightness(30%);
-  background-color: #ec1d25;
+footer .col-4 .parent div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.5s ease;
+}
+footer .col-4 .parent div:hover::after {
+  background-color: rgba(255, 0, 0, 0.634);
 }
 
 .footer-2 {
@@ -215,8 +227,9 @@ footer .col-4 .parent div:hover img {
   color: white;
 }
 .footer-2 .content .theme {
-  justify-items: flex-end;
+  justify-content: flex-end;
   color: #999999;
+  display: flex;
 }
 
 #hero-banner {
