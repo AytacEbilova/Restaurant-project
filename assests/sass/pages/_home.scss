@@ -628,6 +628,7 @@
     padding: 100px 0;
     .row{
         .col-4{
+            position: relative;
             p{
                 margin:10px;
                 font-family: Poppins;
@@ -638,15 +639,13 @@
                 letter-spacing: 3px;
             }
             input[type="email"] {
-                position: relative;
-                padding-right: 30px; // Provide space for the icon
+                // padding-right: 30px; // Provide space for the icon
               }
         
               i.fa-solid.fa-envelope {
                 position: absolute;
-                right: 400px;
-                
-                transform: translateY(-50%);
+                right: 25px;
+                top:10px;
                 color: black;
               }
             }
