@@ -498,7 +498,6 @@ footer .col-4 .parent div:hover::after {
   font-size: 30px;
   line-height: 1.2;
   color: #d61c22;
-  margin-left: 200px;
 }
 .reservation-sect .container .txt-center .tittle-h3 {
   font-family: "Poppins", sans-serif;
@@ -510,21 +509,20 @@ footer .col-4 .parent div:hover::after {
   letter-spacing: 10px;
   word-spacing: 6px;
 }
-.reservation-sect .container .txt-center p {
+.reservation-sect .container p {
   color: #555555;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  display: flex;
 }
-.reservation-sect .container .txt-center .reserv-form {
+.reservation-sect .container .reserv-form {
   width: 100%;
   height: 50px;
   border-radius: 10px;
   margin-bottom: 23px;
   margin-top: 3px;
 }
-.reservation-sect .container img {
+.reservation-sect .container .book-pic {
   border-radius: 10px;
   max-width: 390px;
   margin: auto;
@@ -540,10 +538,18 @@ footer .col-4 .parent div:hover::after {
 .reservation-sect .container .img:hover img {
   transform: scale(1.1);
 }
-.reservation-sect .container button {
+.reservation-sect .container .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reservation-sect .container .button button {
   margin-top: 30px;
-  width: 20%;
-  border: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #111111;
+  margin: 6px 0 0;
 }
 .reservation-sect .container button:hover {
   background-color: #d61c22;
@@ -1007,4 +1013,25 @@ footer .col-4 .parent div:hover::after {
   color: #333333;
   line-height: 1.2;
   text-transform: uppercase;
+}
+
+.hero-banner {
+  background-image: url("/assests/images/Menu_files/bg-title-page-02.jpg.webp");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-banner h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  word-spacing: 6px;
+  text-align: center;
 }

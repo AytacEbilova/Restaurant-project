@@ -42,8 +42,8 @@
 
                 <nav>
                     <ul class="menu-list">
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">MENU</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="menu.html">MENU</a></li>
                         <li><a href="">RESERVATION</a></li>
                         <li><a href="">GALLERY</a></li>
                         <li><a href="">ABOUT</a></li>
@@ -214,8 +214,10 @@
                     <div class="txt-center">
                         <p class="tittle-span">Reservation</p>
                         <h3 class="tittle-h3">BOOK TABLE</h3>
+                    </div>
+                    <form>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col 6">
                                 <p>Date:</p>
                                 <input type="date" class="form-control reserv-form" name="date">
                                 <p>Time:</p>
@@ -244,15 +246,22 @@
                                 <input type="email" class="form-control reserv-form" placeholder="Email" required>
                             </div>
 
+
+
                         </div>
-                        <button type="button" class="btn btn-dark">Book Table</button>
-                    </div>
+                        <div class="button">
+                            <button  type="button" class="btn btn-dark">Book Table</button>
+                        </div>
+                        
+                    </form>
                 </div>
-                <div class="col-6 pb-30 pt-18 img">
-                    <img src="./assests/images/booking-01.jpg.webp" alt="">
+                <div class="col-6">
+                    <img class="book-pic" src="./assests/images/booking-01.jpg.webp" alt="">
                 </div>
             </div>
+           
         </div>
+
     </section>
     <!-- END RESERVATION SECTION -->
 
@@ -427,6 +436,3 @@
         </div>
     </footer>
     <!-- END FOOTER-2 SECTION -->
-
-    
-     

@@ -1,0 +1,22 @@
+//-------------START HERO BANNER SECTION----------------------
+.hero-banner{
+    background-image: url('/assests/images/Menu_files/bg-title-page-02.jpg.webp');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    @include flex();
+    h2{
+        color: $color-white;
+        font-family: $poppins;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        word-spacing: 6px ;
+        text-align: center;
+        
+    }
+}
+//--------------END HERO-BANNER SECTION---------------------------
+
