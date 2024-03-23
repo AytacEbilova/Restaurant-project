@@ -6,7 +6,7 @@ footer{
             
             ul{
                 li{
-                    font-family: Montserrat;
+                    font-family: $font-family;
                     font-weight: 400;
                     font-size: 13px;
                     color: #999999;
@@ -15,10 +15,10 @@ footer{
                 }
             }
             a{
-                font-family: Montserrat;
+                font-family: $font-family;
                 font-weight: 400;
                 font-size: 13px;
-                color: #ec1d25;
+                color: $color-red;
                 line-height: 1.7;
             }
             i{
@@ -28,7 +28,7 @@ footer{
                 font-family: Poppins;
                 font-weight: 500;
                 font-size: 18px;
-                color: white;
+                color: $color-white;
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 margin-bottom:33px;
