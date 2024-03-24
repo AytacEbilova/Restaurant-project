@@ -1,5 +1,5 @@
 .gallery{
-    .text-center{
+    .text-cent{
         ul{
             @include flex();
             gap: 50px;
@@ -68,14 +68,29 @@
         
         }
     }
-    a{
-        button{
-            border-radius: 50%;
-            width: 36px;
-            height: 36px;
-            margin: 6px;
-            
+    .click{
+        ul{
+            @include flex();
+            li{
+                
+                a{
+                    button{
+                        border-radius: 50%;
+                        width: 36px;
+                        height: 36px;
+                        margin: 6px;
+                        border-style: none; 
+                        border: 1px solid $primary-gray;
+                    }
+                    button:hover{
+                        background-color: $dark-gray;
+                        color: $color-white;
+                    }
+            }
+        }
+       
         }
     }
+   
    
 }

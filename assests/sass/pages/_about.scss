@@ -1,18 +1,21 @@
-.hero-banner{
+.hero-banner {
     background-image: url('/assests/images/Menu_files/bg-title-page-03.jpg.webp');
 }
+
 //---------------------------START TEXT-CENTER--------------------------------------------------------------
-.text-center{
+.text-center {
     background-image: url('/assests/images/pattern2.png.webp');
     padding: 100px 0;
-    .tittle-span{
+
+    .tittle-span {
         font-family: $courgette;
         font-size: 30px;
         line-height: 1.2;
         color: #d61c22
     }
-    .tittle-h3{
-        font-family:$poppins;
+
+    .tittle-h3 {
+        font-family: $poppins;
         font-weight: 700;
         font-size: 50px;
         line-height: 1.2;
@@ -23,103 +26,122 @@
         color: $bg-dark;
         padding: 10px 0;
     }
-    #tittle-p{
+
+    #tittle-p {
         font-size: 15px;
         font-family: $font-family;
-        color:#666666;
+        color: #666666;
         font-weight: 400;
         margin: 0px 22px 28px;
         line-height: 1.7;
         padding: 30px 0;
     }
 }
+
 //-----------------------------END TEXT CENTER---------------------------------------------------------------------
 
-.welcome-sect{
-    .row{
-    .text-sect{
-        .left{
-            .tittle-h3{
-                font-family: $poppins;
-                font-weight: 700;
-                font-size: 50px;
-                line-height: 1.2;
-                color: #222222;
-                text-transform: uppercase;
-                letter-spacing: 6px;
-            }
-        }
-        .right{
-            border-radius: 10px;
-            overflow: hidden;
-            img{
-                width: 100%;
-                transition: 300ms linear;
-            }
-            img:hover{
-                transform: scale(1.1);
-            }
-            
-        }
-    }
-}
-}
-
-.romantic-rest{
-    background-image: url('/assests/images/pattern1.png.webp');
-    .row{
-        .col-6{
-            text-align: center;
-            .img-container{
-                border-radius: 10px;
-                overflow: hidden;
-                img{
-                    width: 100%;
-                    height: auto;
-                    transition: 300ms linear;
-                }
-            }
-            img:hover{
-                transform: scale(1.1);
-            }
-            .text-sect{
-                padding: 100px 0;
-                .tittle-span{
-                    font-family: $courgette;
-                    font-size: 30px;
-                    line-height: 1.2;
-                    color: #d61c22;
-                    }
-                    .tittle-h3{
-                    font-family:$poppins;
+.welcome-sect {
+    .row {
+        .text-sect {
+            .left {
+                .tittle-h3 {
+                    font-family: $poppins;
                     font-weight: 700;
                     font-size: 50px;
                     line-height: 1.2;
-                    color: $color-white;
+                    color: #222222;
                     text-transform: uppercase;
-                    letter-spacing: 10px;
-                    word-spacing: 6px;
-                    color: $bg-dark;
-                    padding: 10px 0;
-                   }
-                   #tittle-p{
-                    font-size: 15px;
-                    font-family: $font-family;
-                    color:#666666;
-                    font-weight: 400;
-                    margin: 0px 22px 28px;
-                    line-height: 1.7;
-                    padding: 30px 0;
-                   }
-        
+                    letter-spacing: 6px;
+                }
             }
+
+            .right {
+                border-radius: 10px;
+                overflow: hidden;
+
+                img {
+                    transition: 300ms linear;
+                }
+
+                img:hover {
+                    transform: scale(1.1);
+                }
+
             }
-            
+        }
+    }
 }
 
+.romantic-rest {
+    background-image: url('/assests/images/pattern1.png.webp');
+    padding: 100px 0;
+
+    .row {
+        .text-sect {
+            display: flex;
+            gap: 50px;
+            .left {
+                text-align: center;
+                width:75%;
+                .img-container {
+                    border-radius: 10px;
+                    overflow: hidden;
+                    img {
+                        width:100%;
+                        transition: 300ms linear;
+                    }
+                    img:hover {
+                        transform: scale(1.1);
+                    }
+                }
+
+               
+            }
+
+            .right {
+                text-align: center;
+                .text-sect {
+                    padding: 0;
+                    display: block;
+                    .tittle-span {
+                        font-family: $courgette;
+                        font-size: 30px;
+                        line-height: 1.2;
+                        color: #d61c22;
+                    }
+
+                    .tittle-h3 {
+                        font-family: $poppins;
+                        font-weight: 700;
+                        font-size: 50px;
+                        line-height: 1.2;
+                        color: $color-white;
+                        text-transform: uppercase;
+                        letter-spacing: 10px;
+                        word-spacing: 6px;
+                        color: $bg-dark;
+                        padding: 10px 0;
+                    }
+
+                    #tittle-p {
+                        font-size: 15px;
+                        font-family: $font-family;
+                        color: #666666;
+                        font-weight: 400;
+                        margin: 0px 22px 28px;
+                        line-height: 1.7;
+                        padding: 30px 0;
+                    }
+
+                }
+            }
+        }
+    }
 }
 
-.video-sect{
+
+
+.video-sect {
     background-image: url('/assests/images/bg-cover-video-02.jpg');
     background-size: cover;
     background-position: center;
@@ -127,18 +149,21 @@
     height: 90vh;
 }
 
-.chef-sect{
+.chef-sect {
     padding: 100px 0;
-    .text-sect{
+
+    .text-sect {
         text-align: center;
-        .tittle-span{
+
+        .tittle-span {
             font-family: $courgette;
             font-size: 30px;
             line-height: 1.2;
             color: #d61c22
         }
-        .tittle-h3{
-            font-family:$poppins;
+
+        .tittle-h3 {
+            font-family: $poppins;
             font-weight: 700;
             font-size: 50px;
             line-height: 1.2;
@@ -150,32 +175,36 @@
             padding: 10px 0;
         }
     }
-    .col-4{
-       
-        .image-container{
+
+    .col-4 {
+
+        .image-container {
             padding: 50px 0;
             text-align: center;
-            a{
-                img{
+
+            a {
+                img {
                     border-radius: 50%;
                     width: 50%;
                     border: 5px solid $color-red;
                     vertical-align: middle;
                 }
             }
-            
+
         }
 
-        .txt{
+        .txt {
             text-align: center;
             padding: 90px 35px 30px 35px;
             border: 2px solid #e6e6e6;
             border-radius: 10px;
             min-height: 320px;
-            a{
+
+            a {
                 text-decoration: none;
                 color: black;
-                h3{
+
+                h3 {
                     font-family: $poppins;
                     font-weight: 700;
                     font-size: 18px;
@@ -184,7 +213,8 @@
                     letter-spacing: 2px;
                 }
             }
-            #chef{
+
+            #chef {
                 font-family: $font-family;
                 font-weight: 400;
                 font-size: 12px;
@@ -192,8 +222,9 @@
                 text-transform: uppercase;
                 line-height: 1.8;
             }
-            p{
-                font-family:$font-family;
+
+            p {
+                font-family: $font-family;
                 font-weight: 400;
                 font-size: 15px;
                 line-height: 1.7;
@@ -203,4 +234,3 @@
         }
     }
 }
-

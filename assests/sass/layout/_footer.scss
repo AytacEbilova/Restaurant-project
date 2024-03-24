@@ -85,7 +85,6 @@ footer{
                    div:hover::after{
                     background-color: rgba(255, 0, 0, 0.634);
                    }
-                        
                      }
                  
                 
@@ -97,9 +96,22 @@ footer{
     background-color: black;
    
     .content{
-            i{
-                color: $color-white;
+        ul{
+            display: flex;
+            gap: 20px;
+            li{
+                text-decoration: none;
+                i{
+                    color: $color-white;
+                }
+                i:hover{
+                    color: $color-red;
+                    
+                }
             }
+        }
+        
+           
        .theme{
         justify-content : flex-end;
         color:#999999;

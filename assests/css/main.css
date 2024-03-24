@@ -223,8 +223,18 @@ footer .col-4 .parent div:hover::after {
 .footer-2 {
   background-color: black;
 }
-.footer-2 .content i {
+.footer-2 .content ul {
+  display: flex;
+  gap: 20px;
+}
+.footer-2 .content ul li {
+  text-decoration: none;
+}
+.footer-2 .content ul li i {
   color: white;
+}
+.footer-2 .content ul li i:hover {
+  color: #ec1d25;
 }
 .footer-2 .content .theme {
   justify-content: flex-end;
@@ -491,39 +501,21 @@ footer .col-4 .parent div:hover::after {
   background-repeat: repeat;
   padding: 100px 0;
 }
-.reservation-sect .container .txt-center {
-  text-align: center;
-}
-.reservation-sect .container .txt-center .tittle-span {
-  font-family: "Courgette";
-  font-size: 30px;
-  line-height: 1.2;
-  color: #d61c22;
-}
-.reservation-sect .container .txt-center .tittle-h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 1.2;
-  color: black;
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  word-spacing: 6px;
-}
-.reservation-sect .container p {
+.reservation-sect .container .row .col-6 {
   color: #555555;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 15px;
+  overflow: hidden;
 }
-.reservation-sect .container .reserv-form {
+.reservation-sect .container .row .reserv-form {
   width: 100%;
   height: 50px;
   border-radius: 10px;
   margin-bottom: 23px;
   margin-top: 3px;
 }
-.reservation-sect .container .book-pic {
+.reservation-sect .container .row .book-pic {
   border-radius: 10px;
   max-width: 390px;
   margin: auto;
@@ -533,18 +525,18 @@ footer .col-4 .parent div:hover::after {
      object-fit: cover;
   background-size: cover;
 }
-.reservation-sect .container .img {
-  overflow: hidden;
+.reservation-sect .container .row img {
+  transition: 300ms linear;
 }
-.reservation-sect .container .img:hover img {
+.reservation-sect .container .row img:hover {
   transform: scale(1.1);
 }
-.reservation-sect .container .button {
+.reservation-sect .container .row .button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.reservation-sect .container .button button {
+.reservation-sect .container .row .button button {
   margin-top: 30px;
   width: 150px;
   height: 40px;
@@ -552,10 +544,28 @@ footer .col-4 .parent div:hover::after {
   background-color: #111111;
   margin: 6px 0 0;
 }
-.reservation-sect .container button:hover {
+.reservation-sect .container .row button:hover {
   background-color: #d61c22;
 }
-
+.reservation-sect .txt-center {
+  text-align: center;
+}
+.reservation-sect .txt-center .tittle-span {
+  font-family: "Courgette";
+  font-size: 30px;
+  line-height: 1.2;
+  color: #d61c22;
+}
+.reservation-sect .txt-center .tittle-h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  word-spacing: 6px;
+}
 .customer-review .container .txt-center {
   text-align: center;
   padding: 100px 0;
@@ -713,17 +723,20 @@ footer .col-4 .parent div:hover::after {
   transform: scale(1.2);
 }
 
-.blog-sect .text-center {
+.blog-sect {
+  padding: 100px 0;
+}
+.blog-sect .text-cent {
   text-align: center;
   padding: 100px 0;
 }
-.blog-sect .text-center .tittle-span {
+.blog-sect .text-cent .tittle-span {
   font-family: "Courgette";
   font-size: 30px;
   line-height: 1.2;
   color: #d61c22;
 }
-.blog-sect .text-center .tittle-h3 {
+.blog-sect .text-cent .tittle-h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 50px;
@@ -736,6 +749,7 @@ footer .col-4 .parent div:hover::after {
 }
 .blog-sect .row .col-4 {
   padding-top: 30px;
+  position: relative;
 }
 .blog-sect .row .col-4 img {
   width: 100%;
@@ -743,6 +757,19 @@ footer .col-4 .parent div:hover::after {
   transition: 300ms linear;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.blog-sect .row .col-4 .time-sect {
+  border-radius: 4px;
+}
+.blog-sect .row .col-4 .time-sect p {
+  position: absolute;
+  left: 25px;
+  bottom: 120px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
 }
 .blog-sect .row .col-4 .div {
   overflow: hidden;
@@ -825,6 +852,10 @@ footer .col-4 .parent div:hover::after {
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+.sign-up .row button:hover {
+  background-color: #ec1d25;
+  border-style: none;
 }
 
 .hero-banner {
@@ -1037,6 +1068,12 @@ footer .col-4 .parent div:hover::after {
   text-align: center;
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .info-sect {
   display: flex;
   margin-top: 40px;
@@ -1070,14 +1107,14 @@ footer .col-4 .parent div:hover::after {
   color: #ec1d25;
 }
 
-.gallery .text-center ul {
+.gallery .text-cent ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
   padding: 80px 0;
 }
-.gallery .text-center ul li {
+.gallery .text-cent ul li {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -1085,7 +1122,7 @@ footer .col-4 .parent div:hover::after {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.gallery .text-center ul li:hover {
+.gallery .text-cent ul li:hover {
   background-color: black;
   width: 130px;
   height: 20px;
@@ -1135,11 +1172,22 @@ footer .col-4 .parent div:hover::after {
   transform: scale(1.05);
   border-radius: 7%;
 }
-.gallery a button {
+.gallery .click ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .click ul li a button {
   border-radius: 50%;
   width: 36px;
   height: 36px;
   margin: 6px;
+  border-style: none;
+  border: 1px solid #666666;
+}
+.gallery .click ul li a button:hover {
+  background-color: #333333;
+  color: white;
 }
 
 .hero-banner {
@@ -1192,7 +1240,6 @@ footer .col-4 .parent div:hover::after {
   overflow: hidden;
 }
 .welcome-sect .row .text-sect .right img {
-  width: 100%;
   transition: 300ms linear;
 }
 .welcome-sect .row .text-sect .right img:hover {
@@ -1201,32 +1248,41 @@ footer .col-4 .parent div:hover::after {
 
 .romantic-rest {
   background-image: url("/assests/images/pattern1.png.webp");
+  padding: 100px 0;
 }
-.romantic-rest .row .col-6 {
+.romantic-rest .row .text-sect {
+  display: flex;
+  gap: 50px;
+}
+.romantic-rest .row .text-sect .left {
   text-align: center;
+  width: 75%;
 }
-.romantic-rest .row .col-6 .img-container {
+.romantic-rest .row .text-sect .left .img-container {
   border-radius: 10px;
   overflow: hidden;
 }
-.romantic-rest .row .col-6 .img-container img {
+.romantic-rest .row .text-sect .left .img-container img {
   width: 100%;
-  height: auto;
   transition: 300ms linear;
 }
-.romantic-rest .row .col-6 img:hover {
+.romantic-rest .row .text-sect .left .img-container img:hover {
   transform: scale(1.1);
 }
-.romantic-rest .row .col-6 .text-sect {
-  padding: 100px 0;
+.romantic-rest .row .text-sect .right {
+  text-align: center;
 }
-.romantic-rest .row .col-6 .text-sect .tittle-span {
+.romantic-rest .row .text-sect .right .text-sect {
+  padding: 0;
+  display: block;
+}
+.romantic-rest .row .text-sect .right .text-sect .tittle-span {
   font-family: "Courgette";
   font-size: 30px;
   line-height: 1.2;
   color: #d61c22;
 }
-.romantic-rest .row .col-6 .text-sect .tittle-h3 {
+.romantic-rest .row .text-sect .right .text-sect .tittle-h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 50px;
@@ -1238,7 +1294,7 @@ footer .col-4 .parent div:hover::after {
   color: black;
   padding: 10px 0;
 }
-.romantic-rest .row .col-6 .text-sect #tittle-p {
+.romantic-rest .row .text-sect .right .text-sect #tittle-p {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   color: #666666;
@@ -1326,6 +1382,62 @@ footer .col-4 .parent div:hover::after {
   margin: 0;
 }
 
+.blog-hero-banner {
+  background-image: url("/assests/images/Menu_files/bg-title-page-03.jpg.webp");
+  width: 100%;
+  min-height: 545px;
+  background-position: center 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-hero-banner h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  word-spacing: 6px;
+  text-align: center;
+}
+
+.main-content > * {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.breadcrumb {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.breadcrumb .content {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  color: #999999;
+}
+.breadcrumb .content .content-home {
+  font-weight: 400;
+}
+.breadcrumb .content .content-home a {
+  color: #222222;
+  text-decoration: none;
+}
+.breadcrumb .content .content-center {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .hero-banner {
   background-image: url("/assests/images/Menu_files/bg-title-page-02.jpg.webp");
 }
@@ -1356,6 +1468,24 @@ footer .col-4 .parent div:hover::after {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+}
+.map .btn p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.map button {
+  width: 120px;
+  height: 40px;
+}
+.map button:hover {
+  background-color: #ec1d25;
+  color: white;
+  border-style: none;
 }
 .map .last .col-4 {
   display: flex;

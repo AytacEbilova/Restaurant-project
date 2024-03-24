@@ -29,6 +29,25 @@
     .btn{
        @include flex();
        margin-top: 20px;
+       
+       p{
+        font-family:$font-family;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.1;
+        color: $color-white;
+        text-transform: uppercase;
+        letter-spacing: 1px
+       }
+    }
+    button{
+        width: 120px;
+       height: 40px;
+    }
+    button:hover{
+        background-color: $color-red;
+        color: $color-white;
+        border-style: none;
     }
     .last{
         .col-4{

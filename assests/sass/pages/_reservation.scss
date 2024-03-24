@@ -19,7 +19,9 @@
     }
 }
 //--------------END HERO-BANNER SECTION---------------------------
-
+.button{
+    @include flex();
+}
 .info-sect{
     display: flex;
     margin-top:40px;
