@@ -116,17 +116,16 @@
                     }
                 }
                 .right{
-                   
+                    border-radius: 10px;
+                    overflow: hidden;
                     img{
                         width: 100%;
-                        overflow: hidden;
-                        margin: 0 auto;
-                        border-radius: 10px;
                         transition: 300ms linear;
                     }
                     img:hover{
                         transform: scale(1.1);
                     }
+                    
                 }
             }
         }
@@ -188,10 +187,10 @@
                 transform: scale(1.1);
             }
             h3{
-                font-family: Poppins;
+                font-family: $poppins;
                 font-weight: 500;
                 font-size: 22px;
-                color: #333333;
+                color: $dark-gray;
                 text-transform: uppercase;
                 letter-spacing: 3px;
                 margin-bottom: 20px;
@@ -228,7 +227,7 @@
                 font-family: $courgette;
                 font-size: 30px;
                 line-height: 1.2;
-                color: #d61c22
+                color: $bg-red;
             }
             .tittle-h3{
                 font-family:$poppins;
