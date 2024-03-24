@@ -1329,3 +1329,64 @@ footer .col-4 .parent div:hover::after {
 .hero-banner {
   background-image: url("/assests/images/Menu_files/bg-title-page-02.jpg.webp");
 }
+
+.map {
+  background-image: url("/assests/images/pattern1.png.webp");
+  padding: 80px 0;
+}
+.map .txt-sect {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 100px 0;
+}
+.map iframe {
+  border-radius: 15px;
+}
+.map .row {
+  padding: 40px 0;
+}
+.map .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.map .last .col-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+}
+.map .last .col-4 .img-container img {
+  padding-right: 40px;
+  padding-top: 6px;
+}
+.map .last .col-4 .txt #h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+}
+.map .last .col-4 .span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.7;
+}
+.map .last p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.7;
+}

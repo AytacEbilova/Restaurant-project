@@ -1,3 +1,77 @@
 .hero-banner{
     background-image: url('/assests/images/Menu_files/bg-title-page-02.jpg.webp');
 }
+
+//----------------------START MAP SECTION-----------------------------------------------------------------------------
+.map{
+    background-image: url('/assests/images/pattern1.png.webp');
+    padding: 80px 0;
+    .txt-sect{
+    text-align: center;
+    font-family: $poppins;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 100px 0;
+   
+}
+    iframe{
+        border-radius: 15px;
+        
+    }
+    
+    .row{
+        padding: 40px 0;
+        }
+    .btn{
+       @include flex();
+       margin-top: 20px;
+    }
+    .last{
+        .col-4{
+            @include flex();
+            padding: 70px 0;
+            .img-container{
+                img{
+                    padding-right: 40px;
+                    padding-top: 6px;
+                }
+            }
+            .txt{
+                #h3{
+                    font-family: $poppins;
+                    font-weight: 500;
+                    font-size: 22px;
+                    color: $dark-gray;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    padding-bottom: 10px;
+}
+                }
+                .span{
+                    font-family: $font-family;
+                    font-weight: 400;
+                    font-size: 13px;
+                    color: #666666;
+                    line-height: 1.7;
+}
+                }
+                p{
+                    font-family: $font-family;
+                    font-weight: 400;
+                    font-size: 13px;
+                    color: #666666;
+                    line-height: 1.7;
+                }
+
+            }
+}
+//----------------------END MAP SECTION----------------------------------------------------------------------------------------
+
+ 
+
+
+
