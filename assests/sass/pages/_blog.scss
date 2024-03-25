@@ -24,6 +24,7 @@
 .main-content>* {
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 100px;
 }
 
 .breadcrumb {
@@ -226,6 +227,7 @@
             height: 50px;
             position: relative;
             font-family: $font-family;
+
             .search-input {
                 width: 100%;
                 height: 100%;
@@ -234,20 +236,22 @@
                 color: #666666;
                 border: 2px solid #d9d9d9;
                 padding-left: 20px;
-               
+
             }
-            i{
+
+            i {
                 position: absolute;
                 top: 0;
                 right: 0;
                 height: 100%;
-                width:50px;
+                width: 50px;
                 @include flex();
                 color: $color-white;
                 background-color: $dark-gray;
             }
         }
-        h4{
+
+        h4 {
             margin-top: 20px;
             padding-bottom: 30px;
             font-family: $font-family;
@@ -257,21 +261,26 @@
             text-transform: uppercase;
             letter-spacing: 3px;
         }
-        .categories{
+
+        .categories {
             margin-top: 40px;
-            h4{
+
+            h4 {
                 border-bottom: 1px solid #e6e6e6;
             }
-            ul{
+
+            ul {
                 list-style: none;
-                li{
-                    
+
+                li {
+
                     border-bottom: 1px solid #e6e6e6;
                     padding-top: 8px;
                     padding-bottom: 8px;
-                    a{
+
+                    a {
                         text-decoration: none;
-                        color:#222222;
+                        color: #222222;
                         font-family: $font-family;
                         font-weight: 400;
                         font-size: 12px;
@@ -283,28 +292,34 @@
 
             }
         }
-        .popular{
+
+        .popular {
             margin-top: 50px;
             font-family: $font-family;
-            .mini-detail{
+
+            .mini-detail {
                 margin-bottom: 20px;
                 display: flex;
-                .img-container{
-                    width:30%;
+
+                .img-container {
+                    width: 30%;
                     overflow: hidden;
                     margin: 7px;
                     border-radius: 10px;
                     @include flex();
-                    img{
+
+                    img {
                         width: 100%;
                     }
                 }
-                .text-content{
+
+                .text-content {
                     margin: 7px;
                     width: 70%;
-                    a{
+
+                    a {
                         text-decoration: none;
-                        color:#222222;
+                        color: #222222;
                         font-size: 12px;
                         transition: all 300ms;
                         display: block;
@@ -312,24 +327,29 @@
                         font-weight: 500;
                         letter-spacing: 1px;
                     }
-                    a:hover{
-                        color:#ec1d25;
+
+                    a:hover {
+                        color: #ec1d25;
                     }
-                    .date{
+
+                    .date {
                         display: block;
-                        color:$dark-gray;
+                        color: $dark-gray;
                         margin-top: 15px;
                         font-size: 13px;
                     }
                 }
             }
         }
-        .archive{
+
+        .archive {
             margin-top: 50px;
-            .months{
+
+            .months {
                 @include flex(space-between);
                 padding: 8px 0;
-                a{
+
+                a {
                     text-decoration: none;
                     color: #222222;
                     font-family: $font-family;
@@ -339,10 +359,12 @@
                     letter-spacing: 1px;
                     transition: all 300ms;
                 }
-                a:hover{
+
+                a:hover {
                     color: $color-red;
                 }
-                .number{
+
+                .number {
                     color: #999999;
                     font-family: $font-family;
                     font-size: 12px;
@@ -352,6 +374,24 @@
 
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-content>*{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .blog-content {
+
+        .left {
+            width: 100%;
+            border:none;
+        }
+
+        .right {
+            width: 100%;
         }
     }
 }
