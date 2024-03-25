@@ -451,7 +451,7 @@
                     font-family: $poppins;
                     font-weight: 500px;
                     font-size: 22px;
-                    line-height: 1.2px;
+                    line-height: 1.2;
                     letter-spacing: 3px;
                     color: #222222;
                 }
@@ -1207,7 +1207,6 @@
                         margin-bottom: 40px;
                     }
                 }
-
                 .right {
                     width: 100%;
                     text-align: center;
@@ -1291,6 +1290,9 @@
             height: 50px !important;
             margin-bottom: 0 !important;
             @include flex();
+            span{
+                transform :translate(-50%, -50%) rotateZ(0deg) !important;
+            }
         }
 
         .left {
@@ -1389,7 +1391,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .container {
 
         padding-right: 0 !important;

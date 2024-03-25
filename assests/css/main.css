@@ -144,7 +144,7 @@ header .header .social a:hover {
   line-height: 1.7;
   text-decoration: none !important;
 }
-.footer-sect1 .col-md-4 ul li {
+.footer-sect1 .col-4 ul li {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 13px;
@@ -152,10 +152,10 @@ header .header .social a:hover {
   line-height: 1.7;
   margin-bottom: 14px;
 }
-.footer-sect1 .col-md-4 i {
+.footer-sect1 .col-4 i {
   color: white;
 }
-.footer-sect1 .col-md-4 h4 {
+.footer-sect1 .col-4 h4 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -165,7 +165,7 @@ header .header .social a:hover {
   margin-bottom: 33px;
   padding-top: 20px;
 }
-.footer-sect1 .col-md-4 p {
+.footer-sect1 .col-4 p {
   font-family: Montserrat;
   font-weight: 400;
   font-size: 13px;
@@ -173,59 +173,59 @@ header .header .social a:hover {
   line-height: 1.7;
   margin-bottom: 14px;
 }
-.footer-sect1 .col-md-4 .parent {
+.footer-sect1 .col-4 .parent {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 5px;
   grid-row-gap: 5px;
 }
-.footer-sect1 .col-md-4 .parent .div1 {
+.footer-sect1 .col-4 .parent .div1 {
   grid-area: 1/1/2/2;
 }
-.footer-sect1 .col-md-4 .parent .div2 {
+.footer-sect1 .col-4 .parent .div2 {
   grid-area: 1/2/2/3;
 }
-.footer-sect1 .col-md-4 .parent .div3 {
+.footer-sect1 .col-4 .parent .div3 {
   grid-area: 1/3/2/4;
 }
-.footer-sect1 .col-md-4 .parent .div4 {
+.footer-sect1 .col-4 .parent .div4 {
   grid-area: 1/4/2/5;
 }
-.footer-sect1 .col-md-4 .parent .div5 {
+.footer-sect1 .col-4 .parent .div5 {
   grid-area: 2/1/3/2;
 }
-.footer-sect1 .col-md-4 .parent .div6 {
+.footer-sect1 .col-4 .parent .div6 {
   grid-area: 2/2/3/3;
 }
-.footer-sect1 .col-md-4 .parent .div7 {
+.footer-sect1 .col-4 .parent .div7 {
   grid-area: 2/3/3/4;
 }
-.footer-sect1 .col-md-4 .parent .div8 {
+.footer-sect1 .col-4 .parent .div8 {
   grid-area: 2/4/3/5;
 }
-.footer-sect1 .col-md-4 .parent .div9 {
+.footer-sect1 .col-4 .parent .div9 {
   grid-area: 3/1/4/2;
 }
-.footer-sect1 .col-md-4 .parent .div10 {
+.footer-sect1 .col-4 .parent .div10 {
   grid-area: 3/2/4/3;
 }
-.footer-sect1 .col-md-4 .parent .div11 {
+.footer-sect1 .col-4 .parent .div11 {
   grid-area: 3/3/4/4;
 }
-.footer-sect1 .col-md-4 .parent .div12 {
+.footer-sect1 .col-4 .parent .div12 {
   grid-area: 3/4/4/5;
 }
-.footer-sect1 .col-md-4 .parent div {
+.footer-sect1 .col-4 .parent div {
   position: relative;
 }
-.footer-sect1 .col-md-4 .parent img {
+.footer-sect1 .col-4 .parent img {
   width: 100%;
   height: auto;
   background-size: cover;
   transition: 0.5s ease;
 }
-.footer-sect1 .col-md-4 .parent div::after {
+.footer-sect1 .col-4 .parent div::after {
   content: "";
   position: absolute;
   top: 0;
@@ -234,7 +234,7 @@ header .header .social a:hover {
   height: 100%;
   transition: background-color 0.5s ease;
 }
-.footer-sect1 .col-md-4 .parent div:hover::after {
+.footer-sect1 .col-4 .parent div:hover::after {
   background-color: rgba(255, 0, 0, 0.634);
 }
 
@@ -261,37 +261,6 @@ header .header .social a:hover {
   display: flex;
 }
 
-@media only screen and (max-width: 768px) {
-  .footer-sect1 .col-4,
-  .footer-2 .col-6 {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 30px;
-  }
-  .footer-sect1 .col-4 h4,
-  .footer-2 .col-6 .theme {
-    text-align: center;
-  }
-  .footer-sect1 .col-4 ul {
-    padding-left: 0;
-    text-align: center;
-  }
-  .footer-sect1 .col-4 ul li {
-    margin-left: 0;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .footer-2 .content {
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-2 .content ul {
-    margin-bottom: 20px;
-  }
-  .footer-2 .content ul li {
-    margin-right: 0;
-  }
-}
 #hero-banner {
   height: 100vh;
   background-image: url("https://preview.colorlib.com/theme/pato/images/slide1-01.jpg.webp");
@@ -651,7 +620,7 @@ header .header .social a:hover {
   font-family: "Poppins", sans-serif;
   font-weight: 500px;
   font-size: 22px;
-  line-height: 1.2px;
+  line-height: 1.2;
   letter-spacing: 3px;
   color: #222222;
 }
@@ -1288,6 +1257,9 @@ header .header .social a:hover {
     justify-content: center;
     align-items: center;
   }
+  .upcom-content .time-event span {
+    transform: translate(-50%, -50%) rotateZ(0deg) !important;
+  }
   .upcom-content .left {
     width: 80% !important;
     display: flex;
@@ -1361,7 +1333,7 @@ header .header .social a:hover {
     margin-right: 60px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .container {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -1369,8 +1341,8 @@ header .header .social a:hover {
     margin-right: 0 !important;
   }
 }
-.hero-banner {
-  background-image: url("/assests/images/bg-title-page-01.jpg.webp");
+.pato-hero-banner {
+  background-image: url("/assests/images/Menu_files/bg-title-page-01.jpg.webp");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -1378,7 +1350,7 @@ header .header .social a:hover {
   justify-content: center;
   align-items: center;
 }
-.hero-banner h2 {
+.pato-hero-banner h2 {
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -1395,7 +1367,7 @@ header .header .social a:hover {
   background-image: url("/assests/images/pattern1.png.webp");
   background-repeat: repeat;
 }
-.main-menu .row .col-6 h3 {
+.main-menu .row .col-md-6 h3 {
   font-family: Poppins;
   font-weight: 500;
   font-size: 24px;
@@ -1405,17 +1377,17 @@ header .header .social a:hover {
   letter-spacing: 3px;
   padding-bottom: 25px;
 }
-.main-menu .row .col-6 a:hover {
+.main-menu .row .col-md-6 a:hover {
   color: #ec1d25;
   cursor: pointer;
 }
-.main-menu .row .col-6 .price-item {
+.main-menu .row .col-md-6 .price-item {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
 }
-.main-menu .row .col-6 .price-item .price {
+.main-menu .row .col-md-6 .price-item .price {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -1423,7 +1395,7 @@ header .header .social a:hover {
   line-height: 1.2;
   text-transform: uppercase;
 }
-.main-menu .row .col-6 p {
+.main-menu .row .col-md-6 p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 13px;
@@ -1431,7 +1403,7 @@ header .header .social a:hover {
   line-height: 1.7;
   padding-bottom: 30px;
 }
-.main-menu .row .col-6 .line {
+.main-menu .row .col-md-6 .line {
   background-image: url("/assests/images/Menu_files/pattern3.png.webp");
   background-repeat: repeat;
   flex-grow: 1;
@@ -1440,7 +1412,7 @@ header .header .social a:hover {
   margin-right: 10px;
   margin-left: 10px;
 }
-.main-menu .row .col-6 a {
+.main-menu .row .col-md-6 a {
   font-family: Poppins;
   font-weight: 300;
   font-size: 18px;
@@ -1467,7 +1439,7 @@ header .header .social a:hover {
   transform: scale(1.1);
 }
 .lunch-menu .row .col-3 .text-content {
-  padding-top: 70px;
+  padding-top: 100px;
 }
 .lunch-menu .row .col-3 h4 {
   font-family: "Poppins", sans-serif;
@@ -1618,6 +1590,14 @@ header .header .social a:hover {
   color: #ec1d25;
 }
 
+@media only screen and (max-width: 767px) {
+  .info-sect {
+    flex-wrap: wrap;
+  }
+  .info-sect .left, .info-sect .right {
+    width: 100%;
+  }
+}
 .gallery .text-cent ul {
   display: flex;
   justify-content: center;
@@ -1642,12 +1622,16 @@ header .header .social a:hover {
   text-align: center;
   color: white;
 }
-.gallery .row .col-4 .image-container {
+.gallery .text-cent .row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.gallery .text-cent .row .col-md-4 .image-container {
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
 }
-.gallery .row .col-4 .image-container .overlay {
+.gallery .text-cent .row .col-md-4 .image-container .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1661,34 +1645,34 @@ header .header .social a:hover {
   justify-content: center;
   align-items: center;
 }
-.gallery .row .col-4 .image-container .overlay div {
+.gallery .text-cent .row .col-md-4 .image-container .overlay div {
   border-radius: 50%;
   background-color: white;
   padding: 20px;
 }
-.gallery .row .col-4 .image-container .overlay i {
+.gallery .text-cent .row .col-md-4 .image-container .overlay i {
   font-size: 18px;
   color: black;
 }
-.gallery .row .col-4 img {
+.gallery .text-cent .row .col-md-4 img {
   width: 100%;
   margin-top: 40px;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
-.gallery .row .col-4 .image-container:hover .overlay {
+.gallery .text-cent .row .col-md-4 .image-container:hover .overlay {
   opacity: 1;
 }
-.gallery .row .col-4 .image-container:hover img {
+.gallery .text-cent .row .col-md-4 .image-container:hover img {
   transform: scale(1.05);
   border-radius: 7%;
 }
-.gallery .click ul {
+.gallery .text-cent .click ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.gallery .click ul li a button {
+.gallery .text-cent .click ul li a button {
   border-radius: 50%;
   width: 36px;
   height: 36px;
@@ -1696,9 +1680,15 @@ header .header .social a:hover {
   border-style: none;
   border: 1px solid #666666;
 }
-.gallery .click ul li a button:hover {
+.gallery .text-cent .click ul li a button:hover {
   background-color: #333333;
   color: white;
+}
+@media only screen and (max-width: 767px) {
+  .gallery .gallery .text-cent ul {
+    flex-direction: column;
+    gap: 20px !important;
+  }
 }
 
 .hero-banner {
@@ -1763,6 +1753,7 @@ header .header .social a:hover {
 }
 .romantic-rest .row .text-sect {
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
 }
 .romantic-rest .row .text-sect .left {
@@ -1847,28 +1838,35 @@ header .header .social a:hover {
   color: black;
   padding: 10px 0;
 }
-.chef-sect .col-4 .image-container {
+.chef-sect .row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.chef-sect .card-container .image-container {
   padding: 50px 0;
   text-align: center;
+  position: relative;
 }
-.chef-sect .col-4 .image-container a img {
+.chef-sect .card-container .image-container a img {
   border-radius: 50%;
   width: 50%;
   border: 5px solid #ec1d25;
-  vertical-align: middle;
+  position: absolute;
+  left: 100px;
 }
-.chef-sect .col-4 .txt {
+.chef-sect .card-container .txt {
   text-align: center;
   padding: 90px 35px 30px 35px;
   border: 2px solid #e6e6e6;
   border-radius: 10px;
   min-height: 320px;
+  margin-top: 110px;
 }
-.chef-sect .col-4 .txt a {
+.chef-sect .card-container .txt a {
   text-decoration: none;
   color: black;
 }
-.chef-sect .col-4 .txt a h3 {
+.chef-sect .card-container .txt a h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -1876,7 +1874,7 @@ header .header .social a:hover {
   color: #333333;
   letter-spacing: 2px;
 }
-.chef-sect .col-4 .txt #chef {
+.chef-sect .card-container .txt #chef {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -1884,7 +1882,7 @@ header .header .social a:hover {
   text-transform: uppercase;
   line-height: 1.8;
 }
-.chef-sect .col-4 .txt p {
+.chef-sect .card-container .txt p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -1893,6 +1891,14 @@ header .header .social a:hover {
   margin: 0;
 }
 
+@media only screen and (max-width: 767px) {
+  .romantic-rest .row .text-sect .left {
+    width: 100%;
+  }
+  .romantic-rest .row .text-sect .right {
+    width: 100%;
+  }
+}
 .blog-hero-banner {
   background-image: url("/assests/images/Menu_files/bg-title-page-03.jpg.webp");
   width: 100%;
@@ -2258,8 +2264,13 @@ header .header .social a:hover {
   letter-spacing: 3px;
   padding: 100px 0;
 }
+.map .map-container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .map iframe {
   border-radius: 15px;
+  width: 100%;
 }
 .map .row {
   padding: 40px 0;

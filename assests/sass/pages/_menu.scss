@@ -1,6 +1,6 @@
 //-------------START HERO BANNER SECTION----------------------
-.hero-banner{
-    background-image: url('/assests/images/bg-title-page-01.jpg.webp');
+.pato-hero-banner{
+    background-image: url('/assests/images/Menu_files/bg-title-page-01.jpg.webp');
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -26,7 +26,7 @@
     background-image: url('/assests/images/pattern1.png.webp');
     background-repeat: repeat;
     .row{
-        .col-6{
+        .col-md-6{
             
             h3{
                 font-family: Poppins;
@@ -107,7 +107,7 @@
             }
         }
         .text-content{
-            padding-top: 70px;
+            padding-top:100px ;
         }
         h4{
             font-family: $poppins;

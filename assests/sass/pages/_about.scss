@@ -79,30 +79,37 @@
     .row {
         .text-sect {
             display: flex;
+            flex-wrap: wrap;
             gap: 50px;
+
             .left {
                 text-align: center;
-                width:75%;
+                width: 75%;
+
                 .img-container {
                     border-radius: 10px;
                     overflow: hidden;
+
                     img {
-                        width:100%;
+                        width: 100%;
                         transition: 300ms linear;
                     }
+
                     img:hover {
                         transform: scale(1.1);
                     }
                 }
 
-               
+
             }
 
             .right {
                 text-align: center;
+
                 .text-sect {
                     padding: 0;
                     display: block;
+
                     .tittle-span {
                         font-family: $courgette;
                         font-size: 30px;
@@ -176,18 +183,25 @@
         }
     }
 
-    .col-4 {
+    .row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card-container {
 
         .image-container {
             padding: 50px 0;
             text-align: center;
+            position: relative;
 
             a {
                 img {
                     border-radius: 50%;
                     width: 50%;
                     border: 5px solid $color-red;
-                    vertical-align: middle;
+                    position: absolute;
+                    left: 100px;
                 }
             }
 
@@ -199,6 +213,7 @@
             border: 2px solid #e6e6e6;
             border-radius: 10px;
             min-height: 320px;
+            margin-top: 110px;
 
             a {
                 text-decoration: none;
@@ -232,5 +247,22 @@
                 margin: 0;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .romantic-rest {
+        .row {
+            .text-sect {
+                .left {
+                    width: 100%;
+                }
+
+                .right {
+                    width: 100%;
+                }
+            }
+        }
+
     }
 }

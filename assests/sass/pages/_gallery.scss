@@ -22,9 +22,10 @@
               color: white;
             }
         }
-    }
     .row{
-        .col-4{
+        padding-left: 15px;
+        padding-right: 15px;
+        .col-md-4{
             .image-container{
                 position: relative;
                 overflow: hidden;
@@ -93,4 +94,18 @@
     }
    
    
+}
+
+@media only screen and (max-width: 767px){
+    .gallery {
+
+        .text-cent{
+            ul{
+                flex-direction: column;
+                gap: 20px !important;
+            }
+            
+        } 
+    }
+}
 }
