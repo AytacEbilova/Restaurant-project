@@ -1,11 +1,12 @@
 //-------------START HERO BANNER SECTION----------------------
-.pato-hero-banner{
+.pato-hero-banner {
     background-image: url('/assests/images/Menu_files/bg-title-page-01.jpg.webp');
     background-position: center;
     background-size: cover;
     height: 100vh;
     @include flex();
-    h2{
+
+    h2 {
         color: $color-white;
         font-family: $poppins;
         font-weight: 700;
@@ -13,22 +14,24 @@
         line-height: 1.2;
         text-transform: uppercase;
         letter-spacing: 6px;
-        word-spacing: 6px ;
+        word-spacing: 6px;
         text-align: center;
-        
+
     }
 }
+
 //--------------END HERO-BANNER SECTION---------------------------
 
 //--------------START MAIN-MENU------------------------------------
-.main-menu{
+.main-menu {
     padding: 100px 0;
     background-image: url('/assests/images/pattern1.png.webp');
     background-repeat: repeat;
-    .row{
-        .col-md-6{
-            
-            h3{
+
+    .row {
+        .col-md-6 {
+
+            h3 {
                 font-family: Poppins;
                 font-weight: 500;
                 font-size: 24px;
@@ -38,24 +41,28 @@
                 letter-spacing: 3px;
                 padding-bottom: 25px;
             }
-            a:hover{
+
+            a:hover {
                 color: $color-red;
                 cursor: pointer;
             }
-            .price-item{
-               @include flex();
-               margin-bottom: 10px;
-               .price{
-                font-family: $font-family;
-                font-weight: 400;
-                font-size: 22px;
-                color: #333333;
-                line-height: 1.2;
-                text-transform: uppercase
-               }
+
+            .price-item {
+                @include flex();
+                margin-bottom: 10px;
+
+                .price {
+                    font-family: $font-family;
+                    font-weight: 400;
+                    font-size: 22px;
+                    color: #333333;
+                    line-height: 1.2;
+                    text-transform: uppercase
+                }
 
             }
-            p{
+
+            p {
                 font-family: $font-family;
                 font-weight: 400;
                 font-size: 13px;
@@ -63,7 +70,8 @@
                 line-height: 1.7;
                 padding-bottom: 30px;
             }
-            .line{
+
+            .line {
                 background-image: url('/assests/images/Menu_files/pattern3.png.webp');
                 background-repeat: repeat;
                 flex-grow: 1;
@@ -72,7 +80,8 @@
                 margin-right: 10px;
                 margin-left: 10px;
             }
-            a{
+
+            a {
                 font-family: Poppins;
                 font-weight: 300;
                 font-size: 18px;
@@ -85,37 +94,137 @@
         }
     }
 }
+
 //--------------END MAIN MENU--------------------------------------
 
 //--------------START LUNCH-MENU---------------------------------------
-.lunch-menu{
-   
-    .row{
-    .col-md-6{
-        padding-top: 30px;
-        display: flex;
-        .img-container{
-            overflow: hidden;
-            
-            img{
-                width: 100%;
-                padding-bottom: 10px;
-                padding-top: 30px;
-                transition: 0.5s ease;
-                border-radius: 15px;
-               
-            }
-            img:hover{
-                transform: scale(1.1);
-            }
-        }
-        .text-container{
-            padding-top:100px ;
-            display: flex;
-            flex-direction: column;
-            padding-left: 30px;
+.lunch-menu {
 
-            h4{
+    .row {
+        .col-md-6 {
+            padding-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            .img-container {
+                overflow: hidden;
+                border-radius: 10px;
+                width: 50%;
+                margin: 15px;
+                img {
+                    width: 100%;
+                    transition: 0.5s ease;
+                    border-radius: 15px;
+
+                }
+
+                img:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                padding-left: 30px;
+                h4 {
+                    font-family: $poppins;
+                    font-weight: 300;
+                    font-size: 18px;
+                    color: #333333;
+                    line-height: 1.4;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    padding-top: 30px;
+
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                h4:hover {
+                    color: $color-red;
+                    cursor: pointer;
+                }
+
+                p {
+                    font-family: $font-family;
+                    font-weight: 400;
+                    font-size: 13px;
+                    color: #666666;
+                    line-height: 1.7;
+                }
+
+                .price {
+                    font-family: $font-family;
+                    font-weight: 400;
+                    font-size: 22px;
+                    color: #333333;
+                    line-height: 1.2;
+                    text-transform: uppercase
+                }
+
+
+            }
+
+        }
+    }
+}
+
+//---------------END LUNCH-MENU---------------------------------------------
+
+//---------------START DINNER-PICTURE-----------------------------------
+.dinner-pic {
+    background-image: url('/assests/images/Menu_files/header-menu-02.jpg.webp');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 100px 0;
+}
+
+//-----------------END DINNER-PICTURE--------------------------------------
+
+//-----------------START LUNCH-PICTURE-------------------------------------
+.lunch-pic {
+    background-image: url('/assests/images/Menu_files/header-menu-01.jpg.webp');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+//-----------------END LUNCH-PICTURE---------------------------------------
+
+//-----------------START DINNER-MENU------------------------------------------
+.dinner-menu {
+
+    .row {
+        .col-md-6 {
+            padding-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .img-container {
+                overflow: hidden;
+                border-radius: 10px;
+                width: 50%;
+                margin: 15px;
+                img {
+                    width: 100%;
+                    transition: 0.5s ease;
+                    vertical-align: middle;
+                }
+                img:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .text-container {
+                display: flex;
+                flex-direction: column;
+                padding-left: 30px;
+            }
+
+            h4 {
                 font-family: $poppins;
                 font-weight: 300;
                 font-size: 18px;
@@ -124,117 +233,69 @@
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 padding-top: 30px;
-    
+
             }
-            a{
-                text-decoration: none;
-            }
-            h4:hover{
-                color: $color-red;
-                cursor: pointer;
-            }
-            p{
+
+            p {
                 font-family: $font-family;
                 font-weight: 400;
                 font-size: 13px;
                 color: #666666;
                 line-height: 1.7;
             }
-            .price{
+
+            a {
+                text-decoration: none;
+            }
+
+            .price {
                 font-family: $font-family;
                 font-weight: 400;
                 font-size: 22px;
                 color: #333333;
                 line-height: 1.2;
                 text-transform: uppercase
-               }
-
-
-        }
-       
-    }
-}
-}
-//---------------END LUNCH-MENU---------------------------------------------
-
-//---------------START DINNER-PICTURE-----------------------------------
-.dinner-pic{
-    background-image: url('/assests/images/Menu_files/header-menu-02.jpg.webp');
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    padding:100px 0;
-}
-//-----------------END DINNER-PICTURE--------------------------------------
-
-//-----------------START LUNCH-PICTURE-------------------------------------
-.lunch-pic{
-    background-image: url('/assests/images/Menu_files/header-menu-01.jpg.webp');
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-}
-//-----------------END LUNCH-PICTURE---------------------------------------
-
-//-----------------START DINNER-MENU------------------------------------------
-.dinner-menu{
-   
-    .row{
-    .col-md-6{
-        padding-top: 30px;
-        display: flex;
-        .img-container{
-            overflow: hidden;
-            img{
-                width: 100%;
-                padding-bottom: 10px;
-                padding-top: 30px;
-                transition: 0.5s ease;
-                vertical-align: middle;
-            }
-            img:hover{
-                transform: scale(1.1);
             }
         }
-        .text-container{
-            padding-top: 70px;
-            display: flex;
-            flex-direction: column;
-            padding-left: 30px;
-        }
-        h4{
-            font-family: $poppins;
-            font-weight: 300;
-            font-size: 18px;
-            color: #333333;
-            line-height: 1.4;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            padding-top: 30px;
-          
-        }
-        p{
-            font-family: $font-family;
-            font-weight: 400;
-            font-size: 13px;
-            color: #666666;
-            line-height: 1.7;
-        }
-        a{
-            text-decoration: none;
-        }
-        .price{
-            font-family: $font-family;
-            font-weight: 400;
-            font-size: 22px;
-            color: #333333;
-            line-height: 1.2;
-            text-transform: uppercase
-           }
     }
-}
 }
 
 
 
 //-----------------END DINNER-MENU--------------------------------------------------
+
+
+@media only screen and (max-width:767px) {
+
+    .dinner-menu .row .col-md-6 .text-container,
+    .dinner-menu .row .col-md-6 .text-container h4 {
+        padding-top: 0;
+    }
+    .dinner-menu .row .col-md-6 .img-container{
+        width: 50%;
+    }
+    .dinner-menu .row .col-md-6 .img-container img {
+        padding: 0;
+        width: 100%;
+    }
+
+    .lunch-menu .row .col-md-6 .text-container,
+    .lunch-menu .row .col-md-6 .text-container h4 {
+        padding-top: 0;
+    }
+    .lunch-menu .row .col-md-6 .img-container{
+        width: 50%;
+    }
+    .lunch-menu .row .col-md-6 .img-container img {
+        padding: 0;
+        width: 100%;
+    }
+    .lunch-menu {
+
+        .row {
+            .col-md-6 {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

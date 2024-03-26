@@ -94,7 +94,22 @@
 }
 //----------------------END MAP SECTION----------------------------------------------------------------------------------------
 
- 
+@media only screen and (max-width:767px) {
+    .map .last .col-4{
+        padding: 15px 0;
+        width: 100% !important;
+        justify-content: flex-start;
+    }
+
+    .map .container .col-12,
+    .row .col-4{
+        width: 90%;
+        margin: auto;
+    }
+    .map .last{
+        margin-left: 40px;
+    }
+}
 
 
 

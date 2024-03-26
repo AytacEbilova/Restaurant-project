@@ -1471,14 +1471,16 @@ header .header .social a:hover {
 .lunch-menu .row .col-md-6 {
   padding-top: 30px;
   display: flex;
+  flex-wrap: wrap;
 }
 .lunch-menu .row .col-md-6 .img-container {
   overflow: hidden;
+  border-radius: 10px;
+  width: 50%;
+  margin: 15px;
 }
 .lunch-menu .row .col-md-6 .img-container img {
   width: 100%;
-  padding-bottom: 10px;
-  padding-top: 30px;
   transition: 0.5s ease;
   border-radius: 15px;
 }
@@ -1486,7 +1488,6 @@ header .header .social a:hover {
   transform: scale(1.1);
 }
 .lunch-menu .row .col-md-6 .text-container {
-  padding-top: 100px;
   display: flex;
   flex-direction: column;
   padding-left: 30px;
@@ -1542,14 +1543,16 @@ header .header .social a:hover {
 .dinner-menu .row .col-md-6 {
   padding-top: 30px;
   display: flex;
+  flex-wrap: wrap;
 }
 .dinner-menu .row .col-md-6 .img-container {
   overflow: hidden;
+  border-radius: 10px;
+  width: 50%;
+  margin: 15px;
 }
 .dinner-menu .row .col-md-6 .img-container img {
   width: 100%;
-  padding-bottom: 10px;
-  padding-top: 30px;
   transition: 0.5s ease;
   vertical-align: middle;
 }
@@ -1557,7 +1560,6 @@ header .header .social a:hover {
   transform: scale(1.1);
 }
 .dinner-menu .row .col-md-6 .text-container {
-  padding-top: 70px;
   display: flex;
   flex-direction: column;
   padding-left: 30px;
@@ -1591,6 +1593,33 @@ header .header .social a:hover {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 767px) {
+  .dinner-menu .row .col-md-6 .text-container,
+  .dinner-menu .row .col-md-6 .text-container h4 {
+    padding-top: 0;
+  }
+  .dinner-menu .row .col-md-6 .img-container {
+    width: 50%;
+  }
+  .dinner-menu .row .col-md-6 .img-container img {
+    padding: 0;
+    width: 100%;
+  }
+  .lunch-menu .row .col-md-6 .text-container,
+  .lunch-menu .row .col-md-6 .text-container h4 {
+    padding-top: 0;
+  }
+  .lunch-menu .row .col-md-6 .img-container {
+    width: 50%;
+  }
+  .lunch-menu .row .col-md-6 .img-container img {
+    padding: 0;
+    width: 100%;
+  }
+  .lunch-menu .row .col-md-6 {
+    flex-wrap: wrap;
+  }
+}
 .hero-banner {
   background-image: url("/assests/images/Menu_files/bg-title-page-02.jpg.webp");
   background-position: center;
@@ -2415,4 +2444,20 @@ header .header .social a:hover {
   font-size: 13px;
   color: #666666;
   line-height: 1.7;
+}
+
+@media only screen and (max-width: 767px) {
+  .map .last .col-4 {
+    padding: 15px 0;
+    width: 100% !important;
+    justify-content: flex-start;
+  }
+  .map .container .col-12,
+  .row .col-4 {
+    width: 90%;
+    margin: auto;
+  }
+  .map .last {
+    margin-left: 40px;
+  }
 }
