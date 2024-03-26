@@ -1012,28 +1012,30 @@
 //-------------------END SIGN-UP SECTION---------------------------------------------
 // reservation section tablet ucun
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .reservation-sect .container .row .col-lg-6 {
-        width: calc(50% - 20px);
-        float: left;
-        margin-bottom: 20px;
-        padding-bottom: 30px;
-        margin: 0 auto;
-
-    }
-
-    .reservation-sect .container .row .col-lg-6.img {
-        width: 100%;
-        float: none;
-        padding-bottom: 30px;
-        padding-top: 18px;
-    }
-
-    .reservation-sect .container .row .col-lg-6 .button {
-        text-align: center;
-    }
-
-    .reservation-sect .container .row .col-lg-6 .button button {
-        width: 100%;
+    .reservation-sect{
+        .container{
+            .row{
+                .col-lg-6{
+                    width: calc(50% - 20px);
+                    float: left;
+                    margin-bottom: 20px;
+                    padding-bottom: 30px;
+                    margin: 0 auto;
+                    .img{
+                        width: 100%;
+                        float: none;
+                        padding-bottom: 30px;
+                        padding-top: 18px;
+                    }
+                    .button{
+                        text-align: center;
+                        .button{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1058,70 +1060,32 @@
         padding-top: 50px;
         padding-bottom: 50px;
         background-attachment: scroll;
-    }
-
-    .video-sect .container .txt-content {
-        text-align: center;
-    }
-
-    .video-sect .container .txt-content .tittle-span {
-        font-size: 30px;
-        margin-top: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .video-sect .container .txt-content .tittle-h3 {
-        font-size: 40px;
-        margin-top: 10px;
-    }
-
-    .video-sect .container .txt-content button {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .video-sect .container .txt-content button i {
-        font-size: 14px;
+        .container{
+            .txt-content{
+                text-align: center;
+                .tittle-span{
+                    font-size: 30px;
+                    margin-top: 30px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                .tittle-h3{
+                    font-size: 40px;
+                    margin-top: 10px;
+                }
+                .button{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    i{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
 }
 
 
-
-
-
-
-
-// //mobile uchun
-// @media only screen and (max-width: 767px) {
-//     .reservation-sect {
-//       padding: 50px 0; 
-//       .row {
-//         display: flex;
-//         flex-direction: column;
-//       }
-//       .reservation-sect .container .row .col-lg-6 {
-//         width: 100%; 
-//         margin-bottom: 20px; 
-//       }
-//       .reservation-sect .container .row .col-lg-6.img {
-//         order: 1; /* Resim kolonunu sona taşı */
-//         margin-top: 20px; /* Resim ile diğer içerik arasına boşluk ekle */
-//       }
-//       .reservation-sect .container .row .col-lg-6.img .book-pic {
-//         max-width: 100%; /* Resmin genişliğini ayarla */
-//         border-radius: 0; /* Köşe yuvarlama kaldır */
-//         margin: 0; /* Margin sıfırla */
-//       }
-//       .reservation-sect .container .row .col-lg-6 .button {
-//         text-align: center; /* Butonları ortala */
-//       }
-//       .reservation-sect .container .row .col-lg-6 .button button {
-//         width: 100%; /* Butonun genişliğini ayarla */
-//       }
-//     }
-
-//   }
 
 @media only screen and (max-width: 767px) {
     .welcome-sect {

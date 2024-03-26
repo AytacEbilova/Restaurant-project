@@ -167,7 +167,7 @@ header .header .social a:hover {
   padding-top: 20px;
 }
 .footer-sect1 .col-4 p {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 13px;
   color: #999999;
@@ -1086,7 +1086,7 @@ header .header .social a:hover {
     padding-bottom: 30px;
     margin: 0 auto;
   }
-  .reservation-sect .container .row .col-lg-6.img {
+  .reservation-sect .container .row .col-lg-6 .img {
     width: 100%;
     float: none;
     padding-bottom: 30px;
@@ -1095,7 +1095,7 @@ header .header .social a:hover {
   .reservation-sect .container .row .col-lg-6 .button {
     text-align: center;
   }
-  .reservation-sect .container .row .col-lg-6 .button button {
+  .reservation-sect .container .row .col-lg-6 .button .button {
     width: 100%;
   }
 }
@@ -1126,11 +1126,11 @@ header .header .social a:hover {
     font-size: 40px;
     margin-top: 10px;
   }
-  .video-sect .container .txt-content button {
+  .video-sect .container .txt-content .button {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .video-sect .container .txt-content button i {
+  .video-sect .container .txt-content .button i {
     font-size: 14px;
   }
 }
@@ -1468,25 +1468,30 @@ header .header .social a:hover {
   text-decoration: none;
 }
 
-.lunch-menu .row .col-3 {
+.lunch-menu .row .col-md-6 {
   padding-top: 30px;
+  display: flex;
 }
-.lunch-menu .row .col-3 .img-cont {
+.lunch-menu .row .col-md-6 .img-container {
   overflow: hidden;
 }
-.lunch-menu .row .col-3 .img-cont img {
+.lunch-menu .row .col-md-6 .img-container img {
   width: 100%;
   padding-bottom: 10px;
   padding-top: 30px;
   transition: 0.5s ease;
+  border-radius: 15px;
 }
-.lunch-menu .row .col-3 .img-cont img:hover {
+.lunch-menu .row .col-md-6 .img-container img:hover {
   transform: scale(1.1);
 }
-.lunch-menu .row .col-3 .text-content {
+.lunch-menu .row .col-md-6 .text-container {
   padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
 }
-.lunch-menu .row .col-3 h4 {
+.lunch-menu .row .col-md-6 .text-container h4 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -1496,18 +1501,21 @@ header .header .social a:hover {
   letter-spacing: 2px;
   padding-top: 30px;
 }
-.lunch-menu .row .col-3 h4:hover {
+.lunch-menu .row .col-md-6 .text-container a {
+  text-decoration: none;
+}
+.lunch-menu .row .col-md-6 .text-container h4:hover {
   color: #ec1d25;
   cursor: pointer;
 }
-.lunch-menu .row .col-3 p {
+.lunch-menu .row .col-md-6 .text-container p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 13px;
   color: #666666;
   line-height: 1.7;
 }
-.lunch-menu .row .col-3 .price {
+.lunch-menu .row .col-md-6 .text-container .price {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -1531,25 +1539,30 @@ header .header .social a:hover {
   height: 100vh;
 }
 
-.dinner-menu .row .col-3 {
+.dinner-menu .row .col-md-6 {
   padding-top: 30px;
+  display: flex;
 }
-.dinner-menu .row .col-3 .img-cont {
+.dinner-menu .row .col-md-6 .img-container {
   overflow: hidden;
 }
-.dinner-menu .row .col-3 .img-cont img {
+.dinner-menu .row .col-md-6 .img-container img {
   width: 100%;
   padding-bottom: 10px;
   padding-top: 30px;
   transition: 0.5s ease;
+  vertical-align: middle;
 }
-.dinner-menu .row .col-3 .img-cont img:hover {
+.dinner-menu .row .col-md-6 .img-container img:hover {
   transform: scale(1.1);
 }
-.dinner-menu .row .col-3 .text-content {
+.dinner-menu .row .col-md-6 .text-container {
   padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
 }
-.dinner-menu .row .col-3 h4 {
+.dinner-menu .row .col-md-6 h4 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -1559,14 +1572,17 @@ header .header .social a:hover {
   letter-spacing: 2px;
   padding-top: 30px;
 }
-.dinner-menu .row .col-3 p {
+.dinner-menu .row .col-md-6 p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 13px;
   color: #666666;
   line-height: 1.7;
 }
-.dinner-menu .row .col-3 .price {
+.dinner-menu .row .col-md-6 a {
+  text-decoration: none;
+}
+.dinner-menu .row .col-md-6 .price {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 22px;
