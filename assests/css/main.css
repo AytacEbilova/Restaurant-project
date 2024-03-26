@@ -93,6 +93,7 @@ header .header .logo {
   width: auto;
   max-width: 100%;
   vertical-align: middle;
+  border-radius: 10px;
 }
 header .header nav .menu-list {
   display: flex;
@@ -493,7 +494,7 @@ header .header .social a:hover {
   background-color: white;
   border-radius: 10px;
   opacity: 0.9;
-  width: 150px;
+  width: 200px;
   height: 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -509,6 +510,12 @@ header .header .social a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.our-menu .container .parent .pic-top-button:hover {
+  background-color: #ec1d25;
+}
+.our-menu .container .parent a:hover {
+  color: white;
 }
 .our-menu .container .parent .div1 {
   grid-area: 1/1/5/2;
@@ -541,7 +548,6 @@ header .header .social a:hover {
 }
 .our-menu .container .parent div:hover img {
   transform: scale(1.1);
-  z-index: -1;
 }
 
 .upcom {
@@ -677,13 +683,44 @@ header .header .social a:hover {
 .upcom .upcom-content .right a:hover {
   color: #ec1d25;
 }
+.upcom .bottom-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3 s linear;
+}
+.upcom .bottom-dots #dots {
+  display: flex;
+  gap: 5px;
+}
+.upcom .bottom-dots #dots li {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.upcom .bottom-dots #dots i {
+  color: transparent;
+  background-color: #958e88;
+  border-radius: 50%;
+  font-size: 8px;
+  border: 1px solid transparent;
+}
+.upcom .bottom-dots #dots i:hover {
+  color: #ec1d25;
+  background-color: #ec1d25;
+}
+.upcom .bottom-dots ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
 
 .reservation-sect {
   background-image: url("/assests/images/pattern1.png.webp");
   background-repeat: repeat;
   padding: 100px 0;
 }
-.reservation-sect .container .row .col-6 {
+.reservation-sect .container .row .col-lg-6 {
   color: #555555;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -697,7 +734,7 @@ header .header .social a:hover {
   margin-bottom: 23px;
   margin-top: 3px;
 }
-.reservation-sect .container .row .book-pic {
+.reservation-sect .container .row img {
   border-radius: 10px;
   max-width: 390px;
   margin: auto;
@@ -706,8 +743,6 @@ header .header .social a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
-}
-.reservation-sect .container .row img {
   transition: 300ms linear;
 }
 .reservation-sect .container .row img:hover {
@@ -728,6 +763,7 @@ header .header .social a:hover {
 }
 .reservation-sect .container .row button:hover {
   background-color: #d61c22;
+  border: none;
 }
 .reservation-sect .txt-center {
   text-align: center;
@@ -1209,9 +1245,13 @@ header .header .social a:hover {
   .customer-review .container .txt-center p {
     margin: 0 20px;
     font-size: 16px;
+    padding: 20px 0;
   }
   .customer-review .container .txt-center ul {
     margin-top: 20px;
+  }
+  .customer-review .container .txt-center #cls-p {
+    padding: 30px 0;
   }
   .customer-review .container .txt-center .bottom-dots {
     padding-top: 50px;
@@ -1229,6 +1269,10 @@ header .header .social a:hover {
   }
 }
 @media only screen and (max-width: 767px) {
+  .video-sect .container .txt-content {
+    text-align: center;
+    margin: 50px 0;
+  }
   .video-sect .container .txt-content .tittle-span {
     font-size: 25px;
   }
@@ -1237,8 +1281,33 @@ header .header .social a:hover {
   }
 }
 @media only screen and (max-width: 767px) {
+  .upcom .upcom-content .right {
+    width: 80% !important;
+    padding-bottom: 25px;
+  }
   .upcom .upcom-content .right .number {
     gap: 10px !important;
+    justify-content: center;
+  }
+  .upcom .upcom-content .time-event {
+    width: 100% !important;
+    height: 50px !important;
+    margin-bottom: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .upcom .upcom-content .time-event span {
+    transform: translate(-50%, -50%) rotateZ(0deg) !important;
+  }
+  .upcom .upcom-content .left {
+    width: 80% !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .upcom .upcom-content .left img {
+    width: 100% !important;
+    margin-bottom: 0 !important;
   }
   .content-intro {
     padding-left: 15px;
@@ -1249,35 +1318,11 @@ header .header .social a:hover {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .upcom-content .time-event {
-    width: 100% !important;
-    height: 50px !important;
-    margin-bottom: 0 !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .upcom-content .time-event span {
-    transform: translate(-50%, -50%) rotateZ(0deg) !important;
-  }
-  .upcom-content .left {
-    width: 80% !important;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .upcom-content .left img {
-    width: 100% !important;
-    margin-bottom: 0 !important;
-  }
-  .upcom-content .right {
-    width: 80% !important;
-    padding-bottom: 25px;
-  }
-  .upcom-content .right .number {
-    justify-content: center;
-  }
-  .reservation-sect .container .row .book-pic {
+  .reservation-sect .container .row .col-lg-6 .book-pic {
     width: 100%;
+  }
+  .reservation-sect .container .row .col-lg-6 .button {
+    margin-bottom: 30px;
   }
   .blog-sect .container .text-cent {
     padding: 50px 0;
@@ -1289,13 +1334,13 @@ header .header .social a:hover {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .blog-sect .container .row .col-4 {
+  .blog-sect .container .row .col4 {
     padding-top: 0;
   }
-  .blog-sect .container .row .col-4 img {
+  .blog-sect .container .row .col4 img {
     border-radius: 0;
   }
-  .blog-sect .container .row .col-4 .time-sect p {
+  .blog-sect .container .row .col4 .time-sect p {
     left: 0;
     bottom: 0;
     padding: 10px;
@@ -1308,26 +1353,26 @@ header .header .social a:hover {
     flex-direction: column;
     align-items: center;
   }
-  .sign-up .row input {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .sign-up .col-4 a button {
-    width: 50%;
-  }
-  .sign-up .col-4 {
+  .sign-up .row .col-4 {
     width: 100%;
     margin-bottom: 20px;
     text-align: center;
   }
-  .sign-up .col-4 p {
+  .sign-up .row .col-4 a .button {
+    width: 50%;
+  }
+  .sign-up .row .col-4 p {
     margin: 10px 0;
   }
-  .sign-up .col-4 input.form-control {
+  .sign-up .row .col-4 input {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sign-up .row .col-4 .form-control {
     width: calc(100% - 60px);
     margin-bottom: 10px;
   }
-  .sign-up .col-4 i.fa-solid.fa-envelope {
+  .sign-up .col-4 i.fa-envelope {
     position: static;
     display: block;
     margin-right: 60px;
@@ -1691,8 +1736,25 @@ header .header .social a:hover {
   }
 }
 
-.hero-banner {
+.about-hero-banner {
   background-image: url("/assests/images/Menu_files/bg-title-page-03.jpg.webp");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-hero-banner h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  word-spacing: 6px;
+  text-align: center;
 }
 
 .text-center {
@@ -1753,7 +1815,6 @@ header .header .social a:hover {
 }
 .romantic-rest .row .text-sect {
   display: flex;
-  flex-wrap: wrap;
   gap: 50px;
 }
 .romantic-rest .row .text-sect .left {
@@ -1775,7 +1836,7 @@ header .header .social a:hover {
   text-align: center;
 }
 .romantic-rest .row .text-sect .right .text-sect {
-  padding: 0;
+  padding: 80px 0;
   display: block;
 }
 .romantic-rest .row .text-sect .right .text-sect .tittle-span {
@@ -1892,11 +1953,18 @@ header .header .social a:hover {
 }
 
 @media only screen and (max-width: 767px) {
+  .romantic-rest .row .text-sect {
+    text-align: center;
+  }
   .romantic-rest .row .text-sect .left {
     width: 100%;
   }
   .romantic-rest .row .text-sect .right {
     width: 100%;
+    text-align: center;
+  }
+  .romantic-rest .row .text-sect .right .text-sect {
+    padding-right: 50px;
   }
 }
 .blog-hero-banner {
