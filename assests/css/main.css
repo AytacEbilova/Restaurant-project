@@ -1554,7 +1554,7 @@ header .header .social a:hover {
 .dinner-menu .row .col-md-6 .img-container img {
   width: 100%;
   transition: 0.5s ease;
-  vertical-align: middle;
+  border-radius: 15px;
 }
 .dinner-menu .row .col-md-6 .img-container img:hover {
   transform: scale(1.1);
@@ -1564,7 +1564,7 @@ header .header .social a:hover {
   flex-direction: column;
   padding-left: 30px;
 }
-.dinner-menu .row .col-md-6 h4 {
+.dinner-menu .row .col-md-6 .text-container h4 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -1574,17 +1574,21 @@ header .header .social a:hover {
   letter-spacing: 2px;
   padding-top: 30px;
 }
-.dinner-menu .row .col-md-6 p {
+.dinner-menu .row .col-md-6 .text-container a {
+  text-decoration: none;
+}
+.dinner-menu .row .col-md-6 .text-container h4:hover {
+  color: #ec1d25;
+  cursor: pointer;
+}
+.dinner-menu .row .col-md-6 .text-container p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 13px;
   color: #666666;
   line-height: 1.7;
 }
-.dinner-menu .row .col-md-6 a {
-  text-decoration: none;
-}
-.dinner-menu .row .col-md-6 .price {
+.dinner-menu .row .col-md-6 .text-container .price {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -1594,30 +1598,37 @@ header .header .social a:hover {
 }
 
 @media only screen and (max-width: 767px) {
-  .dinner-menu .row .col-md-6 .text-container,
-  .dinner-menu .row .col-md-6 .text-container h4 {
-    padding-top: 0;
-  }
-  .dinner-menu .row .col-md-6 .img-container {
-    width: 50%;
-  }
-  .dinner-menu .row .col-md-6 .img-container img {
-    padding: 0;
-    width: 100%;
-  }
-  .lunch-menu .row .col-md-6 .text-container,
-  .lunch-menu .row .col-md-6 .text-container h4 {
-    padding-top: 0;
-  }
-  .lunch-menu .row .col-md-6 .img-container {
-    width: 50%;
-  }
-  .lunch-menu .row .col-md-6 .img-container img {
-    padding: 0;
-    width: 100%;
-  }
-  .lunch-menu .row .col-md-6 {
+  .dinner-menu .container .row .col-md-6 {
     flex-wrap: wrap;
+  }
+  .dinner-menu .container .row .col-md-6 .text-container {
+    padding-top: 0;
+  }
+  .dinner-menu .container .row .col-md-6 .text-container h4 {
+    padding-top: 0;
+  }
+  .dinner-menu .container .row .col-md-6 .img-container {
+    width: 50%;
+  }
+  .dinner-menu .container .row .col-md-6 .img-container img {
+    padding: 0;
+    width: 100%;
+  }
+  .lunch-menu .container .row .col-md-6 {
+    flex-wrap: wrap;
+  }
+  .lunch-menu .container .row .col-md-6 .text-container {
+    padding-top: 0;
+  }
+  .lunch-menu .container .row .col-md-6 .text-container h4 {
+    padding-top: 0;
+  }
+  .lunch-menu .container .row .col-md-6 .img-container {
+    width: 50%;
+  }
+  .lunch-menu .container .row .col-md-6 .img-container img {
+    padding: 0;
+    width: 100%;
   }
 }
 .hero-banner {
