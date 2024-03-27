@@ -1,70 +1,79 @@
-.hero-banner{
+.hero-banner {
     background-image: url('/assests/images/Menu_files/bg-title-page-02.jpg.webp');
 }
 
 //----------------------START MAP SECTION-----------------------------------------------------------------------------
-.map{
+.map {
     background-image: url('/assests/images/pattern1.png.webp');
     padding: 80px 0;
-    .txt-sect{
-    text-align: center;
-    font-family: $poppins;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 1.2;
-    color: #222222;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding: 100px 0;
-   
-}
-.map-container{
-    padding-left: 15px;
-    padding-right: 15px;
-}
-    iframe{
+
+    .txt-sect {
+        text-align: center;
+        font-family: $poppins;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1.2;
+        color: #222222;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding: 100px 0;
+
+    }
+
+    .map-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    iframe {
         border-radius: 15px;
         width: 100%;
     }
-    
-    .row{
+
+    .row {
         padding: 40px 0;
+    }
+
+    .btn {
+        @include flex();
+        margin-top: 20px;
+
+        p {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.1;
+            color: $color-white;
+            text-transform: uppercase;
+            letter-spacing: 1px
         }
-    .btn{
-       @include flex();
-       margin-top: 20px;
-       
-       p{
-        font-family:$font-family;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.1;
-        color: $color-white;
-        text-transform: uppercase;
-        letter-spacing: 1px
-       }
     }
-    button{
+
+    button {
         width: 120px;
-       height: 40px;
+        height: 40px;
     }
-    button:hover{
+
+    button:hover {
         background-color: $color-red;
         color: $color-white;
         border-style: none;
     }
-    .last{
-        .col-4{
+
+    .last {
+        .col-4 {
             @include flex();
             padding: 70px 0;
-            .img-container{
-                img{
+
+            .img-container {
+                img {
                     padding-right: 40px;
                     padding-top: 6px;
                 }
             }
-            .txt{
-                #h3{
+
+            .txt {
+                #h3 {
                     font-family: $poppins;
                     font-weight: 500;
                     font-size: 22px;
@@ -72,44 +81,45 @@
                     text-transform: uppercase;
                     letter-spacing: 3px;
                     padding-bottom: 10px;
-}
                 }
-                .span{
-                    font-family: $font-family;
-                    font-weight: 400;
-                    font-size: 13px;
-                    color: #666666;
-                    line-height: 1.7;
-}
-                }
-                p{
-                    font-family: $font-family;
-                    font-weight: 400;
-                    font-size: 13px;
-                    color: #666666;
-                    line-height: 1.7;
-                }
-
             }
+
+            .span {
+                font-family: $font-family;
+                font-weight: 400;
+                font-size: 13px;
+                color: #666666;
+                line-height: 1.7;
+            }
+        }
+
+        p {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 13px;
+            color: #666666;
+            line-height: 1.7;
+        }
+
+    }
 }
+
 //----------------------END MAP SECTION----------------------------------------------------------------------------------------
 
 @media only screen and (max-width:767px) {
-    .map .last .col-4{
+    .map .last .col-4 {
         padding: 15px 0;
         width: 100% !important;
         justify-content: flex-start;
     }
 
     .map .container .col-12,
-    .row .col-4{
+    .row .col-4 {
         width: 90%;
         margin: auto;
     }
-    .map .last{
+
+    .map .last {
         margin-left: 40px;
     }
 }
-
-
-

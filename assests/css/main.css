@@ -1723,16 +1723,20 @@ header .header .social a:hover {
   text-align: center;
   color: white;
 }
-.gallery .text-cent .row {
+.gallery .row .con {
   padding-left: 15px;
   padding-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
 }
-.gallery .text-cent .row .col-md-4 .image-container {
+.gallery .row .con .image-container {
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
+  width: 30%;
 }
-.gallery .text-cent .row .col-md-4 .image-container .overlay {
+.gallery .row .con .image-container .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1746,25 +1750,25 @@ header .header .social a:hover {
   justify-content: center;
   align-items: center;
 }
-.gallery .text-cent .row .col-md-4 .image-container .overlay div {
+.gallery .row .con .image-container .overlay div {
   border-radius: 50%;
   background-color: white;
   padding: 20px;
 }
-.gallery .text-cent .row .col-md-4 .image-container .overlay i {
+.gallery .row .con .image-container .overlay i {
   font-size: 18px;
   color: black;
 }
-.gallery .text-cent .row .col-md-4 img {
+.gallery .row .con img {
   width: 100%;
   margin-top: 40px;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
-.gallery .text-cent .row .col-md-4 .image-container:hover .overlay {
+.gallery .row .con .image-container:hover .overlay {
   opacity: 1;
 }
-.gallery .text-cent .row .col-md-4 .image-container:hover img {
+.gallery .row .con .image-container:hover img {
   transform: scale(1.05);
   border-radius: 7%;
 }
