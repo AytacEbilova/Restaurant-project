@@ -1789,10 +1789,34 @@ header .header .social a:hover {
   background-color: #333333;
   color: white;
 }
+.gallery .click ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery .click ul li a button{
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin: 6px;
+  border-style: none;
+  border: 1px solid gray;
+}
+.gallery .click ul li a button:hover{
+  background-color: gray;
+  color: white;
+}
+
+
 @media only screen and (max-width: 767px) {
-  .gallery .gallery .text-cent ul {
+  .gallery .text-cent ul {
     flex-direction: column;
-    gap: 20px !important;
+    /* gap: 20px !important; */
+  }
+  .gallery .row .con .image-container {
+    width: 90%;
+    margin: auto;
   }
 }
 
